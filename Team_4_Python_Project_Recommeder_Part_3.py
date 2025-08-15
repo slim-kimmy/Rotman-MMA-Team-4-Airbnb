@@ -63,7 +63,7 @@ vector_store.add_documents(documents=documents, ids=uuids)
 
 """Manage vector store"""
 
-def create_page_content(property_item):
+def gen_page_content(property_item):
     location = property_item["location"]
     types = property_item["type"]
     # Join tags and features into a readable string
@@ -75,10 +75,10 @@ def create_page_content(property_item):
     )
 # Airbnb has guidelines for titles, favoring shorter, sentence-style texts and avoiding emojis or excessive capitalization.
 
-# Convert each property into a Document with generated page_content
+# Using for loop to convert database property into a Document with generated page_content
 documents = [
     Document(
-        page_content=create_page_content(prop),
+        page_content=gen_page_content(prop),
         metadata={
             "feature": prop["features"],
             "location": prop["location"],
