@@ -33,28 +33,23 @@ vector_store = FAISS(
 # Sample property data (replace with your actual data)
 property_data = [
     {
-        "property_id": "1",
         "location": "Toronto",
         "type": "Apartment",
         "features": ["wifi", "kitchen", "balcony"],
         "tags": ["cozy", "central"],
-        "price_per_night": 120,
-        "environment": "urban"
+        "nightly_price": 120,
     },
     {
-        "property_id": "2",
         "location": "Montreal",
         "type": "Condo",
         "features": ["parking", "pool"],
         "tags": ["modern", "bright"],
-        "price_per_night": 200,
-        "environment": "urban"
+        "nightly_price": 200,
     },
-    # Add more property items here
+ 
 ]
 
 
-# Convert properties to Documents
 def gen_page_content(prop):
     location = prop["location"]
     prop_type = prop["type"]
@@ -65,8 +60,14 @@ def gen_page_content(prop):
 documents = [
     Document(
         page_content=gen_page_content(prop),
-        metadata=prop
+        metadata={
+            "prop_type": prop["type"]
+            "feature": prop["features"],
+            "location": prop["location"],
+            "tags": prop["tags"]
+        }
     )
+    #how would metadata affect fit score, what is user preference 
     for prop in property_data
 ]
 
@@ -95,16 +96,16 @@ raw_results = vector_store.similarity_search_with_score(query_text, k=10)
 # Filter by environment
 filtered_results = [
     (doc, score) for doc, score in raw_results
-    if doc.metadata.get("environment") == user["preferred_environment"]
+    if doc.metadata.get("tags") == user["preferred_environment"]
 ]
 
 # Apply budget filter
 final_results = [
     (doc, score) for doc, score in filtered_results
-    if user["budget_min"] <= doc.metadata.get("price_per_night", 0) <= user["budget_max"]
+    if user["budget_min"] <= doc.metadata.get("nightly_price", 0) <= user["budget_max"]
 ]
 
 # Print results
 print("Recommended properties:")
 for doc, score in final_results:
-    print(f"* [SIM={score:.3f}] {doc.page_content} | Price: {doc.metadata['price_per_night']}")
+    print(f"* [SIM={score:.3f}] {doc.page_content} | Price: {doc.metadata['nightly_price']}")
