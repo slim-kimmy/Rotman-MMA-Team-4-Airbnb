@@ -60,12 +60,7 @@ def gen_page_content(prop):
 documents = [
     Document(
         page_content=gen_page_content(prop),
-        metadata={
-            "prop_type": prop["type"]
-            "feature": prop["features"],
-            "location": prop["location"],
-            "tags": prop["tags"]
-        }
+        metadata=prop
     )
     #how would metadata affect fit score, what is user preference 
     for prop in property_data
@@ -98,7 +93,7 @@ filtered_results = [
     (doc, score) for doc, score in raw_results
     if doc.metadata.get("tags") == user["preferred_environment"]
 ]
-
+# This never return results
 # Apply budget filter
 final_results = [
     (doc, score) for doc, score in filtered_results
