@@ -1,106 +1,98 @@
-# -*- coding: utf-8 -*-
+import json, hashlib
 
-!pip install -qU langchain faiss-cpu langchain-openai
+# 打开并读取 JSON 文件
+with open("Canadian_properties_50.json", "r", encoding="utf-8") as file:
+    properties = json.load(file)
 
-import getpass
-import os
+
+for prop in properties[:5]:
+    print(f"ID: {prop['property_id']}, Location: {prop['location']}, Price: {prop['nightly_price']}")
 from uuid import uuid4
 
-from langchain.embeddings import AzureOpenAIEmbeddings
+import faiss
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.docstore.in_memory import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
-from langchain.schema import Document  # updated import for Document
+from langchain_core.documents import Document
 
-# Azure API Setup
-if not os.environ.get("AZURE_OPENAI_API_KEY"):
-    os.environ["AZURE_OPENAI_API_KEY"] = getpass.getpass("Enter Azure API key: ")
+with open("Canadian_properties_50.json", "r", encoding="utf-8") as f:
+    property_data = json.load(f)
 
-embeddings = AzureOpenAIEmbeddings(
-    azure_endpoint=os.environ["AZURE_OPENAI_ENDPOINT"],
-    azure_deployment=os.environ["AZURE_OPENAI_DEPLOYMENT_NAME"],
-    openai_api_version=os.environ.get("AZURE_OPENAI_API_VERSION", "2023-03-15-preview")
-)
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 
-# Generate FAISS index
-index = faiss.IndexFlatL2(len(embeddings.embed_query("hello world")))
+dim = len(embeddings.embed_query("hello world"))
+index = faiss.IndexFlatL2(dim)
 
 vector_store = FAISS(
     embedding_function=embeddings,
     index=index,
     docstore=InMemoryDocstore(),
-    index_to_docstore_id={}
+    index_to_docstore_id={},
 )
-# Sample property data (replace with your actual data)
-property_data = [
-    {
-        "location": "Toronto",
-        "type": "Apartment",
-        "features": ["wifi", "kitchen", "balcony"],
-        "tags": ["cozy", "central"],
-        "nightly_price": 120,
-    },
-    {
-        "location": "Montreal",
-        "type": "Condo",
-        "features": ["parking", "pool"],
-        "tags": ["modern", "bright"],
-        "nightly_price": 200,
-    },
- 
-]
 
-
-def gen_page_content(prop):
-    location = prop["location"]
-    prop_type = prop["type"]
-    features_text = ", ".join(prop["features"])
-    tags_text = ", ".join(prop["tags"])
-    return f"{tags_text} {location} {prop_type} with {features_text} experiences."
+def create_page_content(property_item):
+    location = property_item["location"]
+    types = property_item["type"]
+    features_text = ", ".join(property_item["features"])
+    tags_text = ", ".join(property_item["tags"])
+    # Airbnb 的风格，简洁描述
+    return f"Our top {tags_text} {location} {types} with {features_text} experiences."
 
 documents = [
     Document(
-        page_content=gen_page_content(prop),
-        metadata=prop
+        page_content=create_page_content(prop),  # 将整个属性数据作为 page_content
+        metadata={
+            "property_id": prop["property_id"],
+            "location": prop["location"],
+            "tags": prop["tags"],
+            "nightly_price": prop["nightly_price"]
+        }
     )
-    #how would metadata affect fit score, what is user preference 
     for prop in property_data
 ]
-
 uuids = [str(uuid4()) for _ in range(len(documents))]
 vector_store.add_documents(documents=documents, ids=uuids)
 
-# User input (example)
-user = {
-    "user_id": "U01",
-    "name": "Keqing",
-    "group_size": 2,
-    "preferred_environment": "urban",
-    "budget_min": 100,
-    "budget_max": 150,
-    "travel_dates":{
-        "start":"2025-09-24",
-        "end": "2025-09-25"
-    }
-}
+import json
+import tkinter as tk
+from tkinter import simpledialog
 
-query_text = "Looking for a cozy apartment with wifi and balcony"
+root = tk.Tk()
+root.withdraw()  # 隐藏主窗口
 
-# Similarity search
-raw_results = vector_store.similarity_search_with_score(query_text, k=10)
+# 加载用户数据
+with open("canadian_users_50.json", "r", encoding="utf-8") as f:
+    users = json.load(f)
 
-# Filter by environment
-filtered_results = [
-    (doc, score) for doc, score in raw_results
-    if doc.metadata.get("tags") == user["preferred_environment"]
-]
-# This never return results
-# Apply budget filter
-final_results = [
-    (doc, score) for doc, score in filtered_results
-    if user["budget_min"] <= doc.metadata.get("nightly_price", 0) <= user["budget_max"]
-]
+# 弹窗让用户输入 user_id
+user_id_input = simpledialog.askstring("用户登录", "请输入你的用户ID：")
 
-# Print results
-print("Recommended properties:")
-for doc, score in final_results:
-    print(f"* [SIM={score:.3f}] {doc.page_content} | Price: {doc.metadata['nightly_price']}")
+# 查找对应的用户
+current_user = next((u for u in users if u["user_id"] == user_id_input), None)
+
+if not current_user:
+    print("未找到该用户！")
+else:
+    while True:
+        # 弹窗获取查询文本
+        query_text = simpledialog.askstring("搜索", "请输入查询内容（取消或空文本退出）：")
+        if not query_text:
+            print("用户取消搜索，程序结束。")
+            break  # 用户取消或输入空文本则退出循环
+
+        # 相似度搜索
+        initial_results = vector_store.similarity_search_with_score(query_text, k=50)
+
+        # 按用户预算过滤
+        def filter_properties_by_user(prop, user):
+            price = prop.metadata.get("nightly_price", 0)
+            return user["budget_min"] <= price <= user["budget_max"]
+
+        filtered_results = [(res, score) for res, score in initial_results if filter_properties_by_user(res, current_user)]
+        filtered_results = filtered_results[:10]
+        filtered_results.sort(key=lambda x: x[1])
+
+        # 打印搜索结果
+        for res, score in filtered_results:
+            print(f"* [SIM={score:.3f}] {res.page_content}")
+        print(None)
