@@ -3,11 +3,7 @@ import json
 # 打开并读取 JSON 文件
 with open("Canadian_properties_50.json", "r", encoding="utf-8") as file:
     properties = json.load(file)
-
-# 打印前 5 个房产信息
-for prop in properties[:5]:
-    print(f"ID: {prop['property_id']}, Location: {prop['location']}, Price: {prop['nightly_price']}")
-
+    
 import json
 from uuid import uuid4
 import faiss
@@ -63,7 +59,7 @@ from tkinter import simpledialog
 root = tk.Tk()
 root.withdraw()  # 隐藏主窗口
 
-# 加载用户数据
+###################### 加载用户数据 弹窗搜索 ###########################
 with open("canadian_users_50.json", "r", encoding="utf-8") as f:
     users = json.load(f)
 
@@ -82,8 +78,8 @@ else:
     if query_text:
         # 相似度搜索
         initial_results = vector_store.similarity_search_with_score(query_text, k=20)
-
-        # 只按价格过滤
+################### 未过滤结果 ###################
+        # 按价格过滤
         def filter_properties_by_user(prop, user):
             price = prop.metadata.get("nightly_price", 0)
             return user["budget_min"] <= price <= user["budget_max"]
@@ -94,3 +90,4 @@ else:
         print(f"\n用户 {current_user['name']} 的搜索结果：")
         for res, score in filtered_results:
             print(f"* [SIM={score:.3f}] {res.page_content}")
+#U1000000001
