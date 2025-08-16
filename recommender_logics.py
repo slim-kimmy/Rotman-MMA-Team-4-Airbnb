@@ -78,7 +78,7 @@ else:
     if query_text:
         # 相似度搜索
         initial_results = vector_store.similarity_search_with_score(query_text, k=20)
-################### 未过滤结果 ###################
+        
         # 按价格过滤
         def filter_properties_by_user(prop, user):
             price = prop.metadata.get("nightly_price", 0)
