@@ -1,0 +1,602 @@
+[
+  {
+    "user_id": "U1000000001",
+    "name": "Keqing",
+    "group_size": 2,
+    "preferred_environment": "urban",
+    "budget_min": 100,
+    "budget_max": 150,
+    "travel_dates": {
+      "start": "2025-09-24",
+      "end": "2025-09-25"
+    }
+  },
+  {
+    "user_id": "U1000000002",
+    "name": "Jason",
+    "group_size": 3,
+    "preferred_environment": "rural",
+    "budget_min": 80,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-09-28",
+      "end": "2025-10-02"
+    }
+  },
+  {
+    "user_id": "U1000000003",
+    "name": "Sophia",
+    "group_size": 1,
+    "preferred_environment": "suburban",
+    "budget_min": 120,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-08-10",
+      "end": "2025-08-15"
+    }
+  },
+  {
+    "user_id": "U1000000004",
+    "name": "Liam",
+    "group_size": 4,
+    "preferred_environment": "urban",
+    "budget_min": 200,
+    "budget_max": 300,
+    "travel_dates": {
+      "start": "2025-09-01",
+      "end": "2025-09-07"
+    }
+  },
+  {
+    "user_id": "U1000000005",
+    "name": "Emma",
+    "group_size": 2,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-15",
+      "end": "2025-07-18"
+    }
+  },
+  {
+    "user_id": "U1000000006",
+    "name": "Olivia",
+    "group_size": 2,
+    "preferred_environment": "suburban",
+    "budget_min": 110,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-08-20",
+      "end": "2025-08-25"
+    }
+  },
+  {
+    "user_id": "U1000000007",
+    "name": "Noah",
+    "group_size": 3,
+    "preferred_environment": "urban",
+    "budget_min": 130,
+    "budget_max": 250,
+    "travel_dates": {
+      "start": "2025-09-10",
+      "end": "2025-09-15"
+    }
+  },
+  {
+    "user_id": "U1000000008",
+    "name": "Ava",
+    "group_size": 1,
+    "preferred_environment": "rural",
+    "budget_min": 100,
+    "budget_max": 170,
+    "travel_dates": {
+      "start": "2025-07-01",
+      "end": "2025-07-05"
+    }
+  },
+  {
+    "user_id": "U1000000009",
+    "name": "Mason",
+    "group_size": 2,
+    "preferred_environment": "suburban",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-08-12",
+      "end": "2025-08-16"
+    }
+  },
+  {
+    "user_id": "U1000000010",
+    "name": "Isabella",
+    "group_size": 4,
+    "preferred_environment": "urban",
+    "budget_min": 200,
+    "budget_max": 300,
+    "travel_dates": {
+      "start": "2025-09-05",
+      "end": "2025-09-12"
+    }
+  },
+  {
+    "user_id": "U1000000011",
+    "name": "Ethan",
+    "group_size": 2,
+    "preferred_environment": "beachfront",
+    "budget_min": 120,
+    "budget_max": 220,
+    "travel_dates": {
+      "start": "2025-07-18",
+      "end": "2025-07-23"
+    }
+  },
+  {
+    "user_id": "U1000000012",
+    "name": "Mia",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 150,
+    "budget_max": 250,
+    "travel_dates": {
+      "start": "2025-08-15",
+      "end": "2025-08-20"
+    }
+  },
+  {
+    "user_id": "U1000000013",
+    "name": "Logan",
+    "group_size": 3,
+    "preferred_environment": "mountain",
+    "budget_min": 100,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-09-08",
+      "end": "2025-09-14"
+    }
+  },
+  {
+    "user_id": "U1000000014",
+    "name": "Charlotte",
+    "group_size": 2,
+    "preferred_environment": "rural",
+    "budget_min": 110,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-07-12",
+      "end": "2025-07-16"
+    }
+  },
+  {
+    "user_id": "U1000000015",
+    "name": "Lucas",
+    "group_size": 4,
+    "preferred_environment": "urban",
+    "budget_min": 180,
+    "budget_max": 280,
+    "travel_dates": {
+      "start": "2025-09-02",
+      "end": "2025-09-08"
+    }
+  },
+  {
+    "user_id": "U1000000016",
+    "name": "Amelia",
+    "group_size": 1,
+    "preferred_environment": "suburban",
+    "budget_min": 100,
+    "budget_max": 170,
+    "travel_dates": {
+      "start": "2025-08-05",
+      "end": "2025-08-10"
+    }
+  },
+  {
+    "user_id": "U1000000017",
+    "name": "James",
+    "group_size": 2,
+    "preferred_environment": "urban",
+    "budget_min": 120,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-09-11",
+      "end": "2025-09-16"
+    }
+  },
+  {
+    "user_id": "U1000000018",
+    "name": "Harper",
+    "group_size": 3,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-20",
+      "end": "2025-07-25"
+    }
+  },
+  {
+    "user_id": "U1000000019",
+    "name": "Benjamin",
+    "group_size": 2,
+    "preferred_environment": "beachfront",
+    "budget_min": 150,
+    "budget_max": 250,
+    "travel_dates": {
+      "start": "2025-08-22",
+      "end": "2025-08-27"
+    }
+  },
+  {
+    "user_id": "U1000000020",
+    "name": "Evelyn",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 130,
+    "budget_max": 210,
+    "travel_dates": {
+      "start": "2025-09-03",
+      "end": "2025-09-07"
+    }
+  },
+  {
+    "user_id": "U1000000021",
+    "name": "Alexander",
+    "group_size": 2,
+    "preferred_environment": "mountain",
+    "budget_min": 100,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-07-28",
+      "end": "2025-08-02"
+    }
+  },
+  {
+    "user_id": "U1000000022",
+    "name": "Abigail",
+    "group_size": 3,
+    "preferred_environment": "suburban",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-08-10",
+      "end": "2025-08-15"
+    }
+  },
+  {
+    "user_id": "U1000000023",
+    "name": "Henry",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 110,
+    "budget_max": 190,
+    "travel_dates": {
+      "start": "2025-09-05",
+      "end": "2025-09-10"
+    }
+  },
+  {
+    "user_id": "U1000000024",
+    "name": "Emily",
+    "group_size": 2,
+    "preferred_environment": "rural",
+    "budget_min": 80,
+    "budget_max": 150,
+    "travel_dates": {
+      "start": "2025-07-14",
+      "end": "2025-07-18"
+    }
+  },
+  {
+    "user_id": "U1000000025",
+    "name": "Jackson",
+    "group_size": 3,
+    "preferred_environment": "urban",
+    "budget_min": 140,
+    "budget_max": 220,
+    "travel_dates": {
+      "start": "2025-09-08",
+      "end": "2025-09-12"
+    }
+  },
+  {
+    "user_id": "U1000000026",
+    "name": "Ella",
+    "group_size": 1,
+    "preferred_environment": "suburban",
+    "budget_min": 100,
+    "budget_max": 170,
+    "travel_dates": {
+      "start": "2025-08-01",
+      "end": "2025-08-05"
+    }
+  },
+  {
+    "user_id": "U1000000027",
+    "name": "Sebastian",
+    "group_size": 2,
+    "preferred_environment": "urban",
+    "budget_min": 120,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-09-12",
+      "end": "2025-09-17"
+    }
+  },
+  {
+    "user_id": "U1000000028",
+    "name": "Scarlett",
+    "group_size": 3,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-18",
+      "end": "2025-07-23"
+    }
+  },
+  {
+    "user_id": "U1000000029",
+    "name": "Jack",
+    "group_size": 2,
+    "preferred_environment": "beachfront",
+    "budget_min": 130,
+    "budget_max": 220,
+    "travel_dates": {
+      "start": "2025-08-15",
+      "end": "2025-08-20"
+    }
+  },
+   {
+    "user_id": "U1000000030",
+    "name": "Lily",
+    "group_size": 3,
+    "preferred_environment": "suburban",
+    "budget_min": 100,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-08-18",
+      "end": "2025-08-23"
+    }
+  },
+  {
+    "user_id": "U1000000031",
+    "name": "Owen",
+    "group_size": 2,
+    "preferred_environment": "urban",
+    "budget_min": 120,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-09-05",
+      "end": "2025-09-10"
+    }
+  },
+  {
+    "user_id": "U1000000032",
+    "name": "Victoria",
+    "group_size": 1,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-20",
+      "end": "2025-07-25"
+    }
+  },
+  {
+    "user_id": "U1000000033",
+    "name": "Samuel",
+    "group_size": 4,
+    "preferred_environment": "urban",
+    "budget_min": 180,
+    "budget_max": 300,
+    "travel_dates": {
+      "start": "2025-09-08",
+      "end": "2025-09-14"
+    }
+  },
+  {
+    "user_id": "U1000000034",
+    "name": "Aria",
+    "group_size": 2,
+    "preferred_environment": "beachfront",
+    "budget_min": 110,
+    "budget_max": 190,
+    "travel_dates": {
+      "start": "2025-08-02",
+      "end": "2025-08-07"
+    }
+  },
+  {
+    "user_id": "U1000000035",
+    "name": "Leo",
+    "group_size": 3,
+    "preferred_environment": "suburban",
+    "budget_min": 100,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-08-12",
+      "end": "2025-08-17"
+    }
+  },
+  {
+    "user_id": "U1000000036",
+    "name": "Zoey",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 130,
+    "budget_max": 220,
+    "travel_dates": {
+      "start": "2025-09-02",
+      "end": "2025-09-07"
+    }
+  },
+  {
+    "user_id": "U1000000037",
+    "name": "Daniel",
+    "group_size": 2,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-25",
+      "end": "2025-07-30"
+    }
+  },
+  {
+    "user_id": "U1000000038",
+    "name": "Hannah",
+    "group_size": 3,
+    "preferred_environment": "mountain",
+    "budget_min": 120,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-08-05",
+      "end": "2025-08-10"
+    }
+  },
+  {
+    "user_id": "U1000000039",
+    "name": "Elijah",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 150,
+    "budget_max": 250,
+    "travel_dates": {
+      "start": "2025-09-12",
+      "end": "2025-09-18"
+    }
+  },
+  {
+    "user_id": "U1000000040",
+    "name": "Aurora",
+    "group_size": 2,
+    "preferred_environment": "suburban",
+    "budget_min": 110,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-08-10",
+      "end": "2025-08-15"
+    }
+  },
+  {
+    "user_id": "U1000000041",
+    "name": "Carter",
+    "group_size": 3,
+    "preferred_environment": "beachfront",
+    "budget_min": 100,
+    "budget_max": 170,
+    "travel_dates": {
+      "start": "2025-08-20",
+      "end": "2025-08-25"
+    }
+  },
+  {
+    "user_id": "U1000000042",
+    "name": "Nora",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 130,
+    "budget_max": 210,
+    "travel_dates": {
+      "start": "2025-09-01",
+      "end": "2025-09-06"
+    }
+  },
+  {
+    "user_id": "U1000000043",
+    "name": "Wyatt",
+    "group_size": 2,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-18",
+      "end": "2025-07-23"
+    }
+  },
+  {
+    "user_id": "U1000000044",
+    "name": "Penelope",
+    "group_size": 3,
+    "preferred_environment": "suburban",
+    "budget_min": 100,
+    "budget_max": 180,
+    "travel_dates": {
+      "start": "2025-08-15",
+      "end": "2025-08-20"
+    }
+  },
+  {
+    "user_id": "U1000000045",
+    "name": "Gabriel",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 120,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-09-04",
+      "end": "2025-09-09"
+    }
+  },
+  {
+    "user_id": "U1000000046",
+    "name": "Riley",
+    "group_size": 2,
+    "preferred_environment": "mountain",
+    "budget_min": 110,
+    "budget_max": 190,
+    "travel_dates": {
+      "start": "2025-08-08",
+      "end": "2025-08-13"
+    }
+  },
+  {
+    "user_id": "U1000000047",
+    "name": "Levi",
+    "group_size": 3,
+    "preferred_environment": "suburban",
+    "budget_min": 100,
+    "budget_max": 170,
+    "travel_dates": {
+      "start": "2025-08-18",
+      "end": "2025-08-23"
+    }
+  },
+  {
+    "user_id": "U1000000048",
+    "name": "Chloe",
+    "group_size": 1,
+    "preferred_environment": "urban",
+    "budget_min": 130,
+    "budget_max": 210,
+    "travel_dates": {
+      "start": "2025-09-03",
+      "end": "2025-09-08"
+    }
+  },
+  {
+    "user_id": "U1000000049",
+    "name": "Isaac",
+    "group_size": 2,
+    "preferred_environment": "rural",
+    "budget_min": 90,
+    "budget_max": 160,
+    "travel_dates": {
+      "start": "2025-07-22",
+      "end": "2025-07-27"
+    }
+  },
+  {
+    "user_id": "U1000000050",
+    "name": "Mila",
+    "group_size": 3,
+    "preferred_environment": "urban",
+    "budget_min": 120,
+    "budget_max": 200,
+    "travel_dates": {
+      "start": "2025-08-12",
+      "end": "2025-08-17"
+    }
+  }
+]
