@@ -1,0 +1,402 @@
+[
+    {
+        "property_id": 1,
+        "location": "Toronto Downtown",
+        "type": "penthouse",
+        "nightly_price": 136,
+        "features": ["parking", "soundproof", "pool", "spa"],
+        "tags": ["nightlife", "romantic", "beachfront", "urban"]
+    },
+    {
+        "property_id": 2,
+        "location": "Vancouver",
+        "type": "apartment",
+        "nightly_price": 120,
+        "features": ["terrace", "garden", "parking"],
+        "tags": ["business", "romantic", "adventure"]
+    },
+    {
+        "property_id": 3,
+        "location": "Montreal",
+        "type": "loft",
+        "nightly_price": 150,
+        "features": ["soundproof", "spa", "terrace"],
+        "tags": ["urban", "romantic", "cultural"]
+    },
+    {
+        "property_id": 4,
+        "location": "Banff",
+        "type": "cabin",
+        "nightly_price": 200,
+        "features": ["fireplace", "garden", "hot tub"],
+        "tags": ["adventure", "winter retreat", "spa access"]
+    },
+    {
+        "property_id": 5,
+        "location": "Whistler",
+        "type": "cottage",
+        "nightly_price": 180,
+        "features": ["canoe", "soundproof", "indoor pool"],
+        "tags": ["beachfront", "adventure", "pet-friendly"]
+    },
+    {
+        "property_id": 6,
+        "location": "Quebec City",
+        "type": "apartment",
+        "nightly_price": 140,
+        "features": ["terrace", "garden", "spa"],
+        "tags": ["romantic", "cultural", "urban"]
+    },
+    {
+        "property_id": 7,
+        "location": "Niagara Falls",
+        "type": "hotel",
+        "nightly_price": 170,
+        "features": ["pool", "spa", "soundproof"],
+        "tags": ["romantic", "adventure", "nightlife"]
+    },
+    {
+        "property_id": 8,
+        "location": "Toronto Midtown",
+        "type": "loft",
+        "nightly_price": 125,
+        "features": ["terrace", "spa"],
+        "tags": ["business", "urban", "romantic"]
+    },
+    {
+        "property_id": 9,
+        "location": "Whistler",
+        "type": "cottage",
+        "nightly_price": 228,
+        "features": ["canoe", "soundproof", "garden", "indoor pool", "hot tub"],
+        "tags": ["beachfront", "adventure", "pet-friendly", "winter retreat", "spa access"]
+    },
+    {
+        "property_id": 10,
+        "location": "Lake Louise",
+        "type": "penthouse",
+        "nightly_price": 266,
+        "features": ["spa", "terrace", "fireplace"],
+        "tags": ["adventure", "romantic", "winter retreat"]
+    },
+    {
+        "property_id": 11,
+        "location": "Calgary",
+        "type": "apartment",
+        "nightly_price": 130,
+        "features": ["parking", "soundproof", "garden"],
+        "tags": ["business", "urban", "adventure"]
+    },
+    {
+        "property_id": 12,
+        "location": "Ottawa",
+        "type": "penthouse",
+        "nightly_price": 145,
+        "features": ["terrace", "spa", "pool"],
+        "tags": ["cultural", "romantic", "urban"]
+    },
+    {
+        "property_id": 13,
+        "location": "Mont Tremblant",
+        "type": "cabin",
+        "nightly_price": 190,
+        "features": ["fireplace", "hot tub", "soundproof"],
+        "tags": ["adventure", "winter retreat", "spa access"]
+    },
+    {
+        "property_id": 14,
+        "location": "Victoria",
+        "type": "loft",
+        "nightly_price": 155,
+        "features": ["terrace", "garden", "soundproof"],
+        "tags": ["romantic", "urban", "beachfront"]
+    },
+    {
+        "property_id": 15,
+        "location": "Halifax",
+        "type": "apartment",
+        "nightly_price": 120,
+        "features": ["spa", "parking", "terrace"],
+        "tags": ["adventure", "business", "cultural"]
+    },
+    {
+        "property_id": 16,
+        "location": "Saskatoon",
+        "type": "cabin",
+        "nightly_price": 180,
+        "features": ["fireplace", "hot tub", "garden"],
+        "tags": ["winter retreat", "adventure", "romantic"]
+    },
+    {
+        "property_id": 17,
+        "location": "Regina",
+        "type": "penthouse",
+        "nightly_price": 140,
+        "features": ["spa", "soundproof", "terrace"],
+        "tags": ["urban", "business", "romantic"]
+    },
+    {
+        "property_id": 18,
+        "location": "Winnipeg",
+        "type": "loft",
+        "nightly_price": 125,
+        "features": ["terrace", "soundproof", "garden"],
+        "tags": ["urban", "adventure", "romantic"]
+    },
+    {
+        "property_id": 19,
+        "location": "Edmonton",
+        "type": "apartment",
+        "nightly_price": 135,
+        "features": ["pool", "spa", "parking"],
+        "tags": ["business", "urban", "adventure"]
+    },
+    {
+        "property_id": 20,
+        "location": "Quebec City",
+        "type": "cabin",
+        "nightly_price": 195,
+        "features": ["fireplace", "hot tub", "soundproof"],
+        "tags": ["winter retreat", "romantic", "spa access"]
+    },
+    {
+        "property_id": 21,
+        "location": "Banff",
+        "type": "penthouse",
+        "nightly_price": 260,
+        "features": ["spa", "terrace", "pool"],
+        "tags": ["adventure", "romantic", "winter retreat"]
+    },
+    {
+        "property_id": 22,
+        "location": "Whistler",
+        "type": "cottage",
+        "nightly_price": 225,
+        "features": ["canoe", "hot tub", "garden", "soundproof"],
+        "tags": ["beachfront", "adventure", "pet-friendly"]
+    },
+    {
+        "property_id": 23,
+        "location": "Montreal",
+        "type": "apartment",
+        "nightly_price": 145,
+        "features": ["terrace", "spa", "soundproof"],
+        "tags": ["urban", "romantic", "cultural"]
+    },
+    {
+        "property_id": 24,
+        "location": "Toronto Downtown",
+        "type": "loft",
+        "nightly_price": 150,
+        "features": ["parking", "spa", "terrace"],
+        "tags": ["nightlife", "romantic", "business"]
+    },
+    {
+        "property_id": 25,
+        "location": "Vancouver",
+        "type": "penthouse",
+        "nightly_price": 170,
+        "features": ["pool", "soundproof", "garden"],
+        "tags": ["urban", "beachfront", "romantic"]
+    },
+    {
+        "property_id": 26,
+        "location": "Halifax",
+        "type": "cabin",
+        "nightly_price": 185,
+        "features": ["fireplace", "hot tub", "terrace"],
+        "tags": ["adventure", "winter retreat", "spa access"]
+    },
+    {
+        "property_id": 27,
+        "location": "Ottawa",
+        "type": "apartment",
+        "nightly_price": 140,
+        "features": ["spa", "garden", "soundproof"],
+        "tags": ["cultural", "urban", "romantic"]
+    },
+    {
+        "property_id": 28,
+        "location": "Banff",
+        "type": "loft",
+        "nightly_price": 200,
+        "features": ["terrace", "spa", "fireplace"],
+        "tags": ["adventure", "winter retreat", "romantic"]
+    },
+    {
+        "property_id": 29,
+        "location": "Lake Louise",
+        "type": "penthouse",
+        "nightly_price": 270,
+        "features": ["spa", "terrace", "pool"],
+        "tags": ["adventure", "romantic", "winter retreat"]
+    },
+    {
+        "property_id": 30,
+        "location": "Victoria",
+        "type": "apartment",
+        "nightly_price": 145,
+        "features": ["soundproof", "terrace", "garden"],
+        "tags": ["romantic", "urban", "beachfront"]
+    },
+    {
+        "property_id": 31,
+        "location": "Mont Tremblant",
+        "type": "cabin",
+        "nightly_price": 190,
+        "features": ["fireplace", "hot tub", "spa"],
+        "tags": ["adventure", "winter retreat", "romantic"]
+    },
+    {
+        "property_id": 32,
+        "location": "Toronto Midtown",
+        "type": "loft",
+        "nightly_price": 130,
+        "features": ["terrace", "soundproof", "spa"],
+        "tags": ["business", "urban", "romantic"]
+    },
+    {
+        "property_id": 33,
+        "location": "Vancouver",
+        "type": "penthouse",
+        "nightly_price": 175,
+        "features": ["pool", "spa", "terrace"],
+        "tags": ["urban", "beachfront", "romantic"]
+    },
+    {
+        "property_id": 34,
+        "location": "Whistler",
+        "type": "cottage",
+        "nightly_price": 230,
+        "features": ["canoe", "hot tub", "indoor pool"],
+        "tags": ["adventure", "pet-friendly", "winter retreat"]
+    },
+    {
+        "property_id": 35,
+        "location": "Calgary",
+        "type": "apartment",
+        "nightly_price": 135,
+        "features": ["soundproof", "parking", "terrace"],
+        "tags": ["business", "urban", "adventure"]
+    },
+    {
+        "property_id": 36,
+        "location": "Ottawa",
+        "type": "loft",
+        "nightly_price": 140,
+        "features": ["spa", "garden", "terrace"],
+        "tags": ["cultural", "urban", "romantic"]
+    },
+    {
+        "property_id": 37,
+        "location": "Banff",
+        "type": "cabin",
+        "nightly_price": 205,
+        "features": ["fireplace", "hot tub", "soundproof"],
+        "tags": ["adventure", "winter retreat", "spa access"]
+    },
+    {
+        "property_id": 38,
+        "location": "Lake Louise",
+        "type": "penthouse",
+        "nightly_price": 275,
+        "features": ["spa", "terrace", "pool"],
+        "tags": ["adventure", "romantic", "winter retreat"]
+    },
+    {
+        "property_id": 39,
+        "location": "Montreal",
+        "type": "apartment",
+        "nightly_price": 150,
+        "features": ["soundproof", "terrace", "spa"],
+        "tags": ["urban", "romantic", "cultural"]
+    },
+    {
+        "property_id": 40,
+        "location": "Toronto Downtown",
+        "type": "loft",
+        "nightly_price": 155,
+        "features": ["parking", "spa", "terrace"],
+        "tags": ["nightlife", "romantic", "business"]
+    },
+    {
+        "property_id": 41,
+        "location": "Vancouver",
+        "type": "penthouse",
+        "nightly_price": 180,
+        "features": ["pool", "soundproof", "garden"],
+        "tags": ["urban", "beachfront", "romantic"]
+    },
+    {
+        "property_id": 42,
+        "location": "Halifax",
+        "type": "cabin",
+        "nightly_price": 190,
+        "features": ["fireplace", "hot tub", "terrace"],
+        "tags": ["adventure", "winter retreat", "spa access"]
+    },
+    {
+        "property_id": 43,
+        "location": "Ottawa",
+        "type": "apartment",
+        "nightly_price": 145,
+        "features": ["spa", "garden", "soundproof"],
+        "tags": ["cultural", "urban", "romantic"]
+    },
+    {
+        "property_id": 44,
+        "location": "Banff",
+        "type": "loft",
+        "nightly_price": 210,
+        "features": ["terrace", "spa", "fireplace"],
+        "tags": ["adventure", "winter retreat", "romantic"]
+    },
+    {
+        "property_id": 45,
+        "location": "Lake Louise",
+        "type": "penthouse",
+        "nightly_price": 280,
+        "features": ["spa", "terrace", "pool"],
+        "tags": ["adventure", "romantic", "winter retreat"]
+    },
+    {
+        "property_id": 46,
+        "location": "Victoria",
+        "type": "apartment",
+        "nightly_price": 150,
+        "features": ["soundproof", "terrace", "garden"],
+        "tags": ["romantic", "urban", "beachfront"]
+    },
+    {
+        "property_id": 47,
+        "location": "Mont Tremblant",
+        "type": "cabin",
+        "nightly_price": 195,
+        "features": ["fireplace", "hot tub", "spa"],
+        "tags": ["adventure", "winter retreat", "romantic"]
+    },
+    {
+        "property_id": 48,
+        "location": "Toronto Midtown",
+        "type": "loft",
+        "nightly_price": 135,
+        "features": ["terrace", "soundproof", "spa"],
+        "tags": ["business", "urban", "romantic"]
+    },
+    {
+        "property_id": 49,
+        "location": "Vancouver",
+        "type": "penthouse",
+        "nightly_price": 185,
+        "features": ["pool", "spa", "terrace"],
+        "tags": ["urban", "beachfront", "romantic"]
+    },
+    {
+        "property_id": 50,
+        "location": "Whistler",
+        "type": "cottage",
+        "nightly_price": 235,
+        "features": ["canoe", "hot tub", "indoor pool", "soundproof"],
+        "tags": ["adventure", "pet-friendly", "winter retreat", "spa access"]
+    }
+]
