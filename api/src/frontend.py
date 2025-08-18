@@ -24,8 +24,6 @@ if st.session_state.auth_user is None:
             try:
                 db_utils.insert_user(username, password, name, int(group_size),
                                      preferred_env, float(min_price), float(max_price))
-                st.balloons()
-                st.success("Account created.")
             except Exception as e:
                 st.error(f"Error: {e}")
 
@@ -36,7 +34,6 @@ if st.session_state.auth_user is None:
         if st.button("Login"):
             if validate_login(log_user, log_pass):
                 st.session_state.auth_user = log_user
-                st.balloons()
                 st.success(f"Logged in as {log_user}")
             else:
                 st.error("Invalid login")
