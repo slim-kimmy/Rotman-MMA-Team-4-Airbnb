@@ -5,7 +5,7 @@ from datetime import datetime
 from dotenv import load_dotenv
 
 load_dotenv()
-DB_PATH = os.getenv("DB_PATH", "./data/users.db")
+DB_PATH = os.getenv("DB_PATH", "/data/users.db")
 
 def get_db_connection():
     """Establish a connection to the SQLite database."""
