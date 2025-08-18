@@ -4,8 +4,8 @@
     "name": "Keqing",
     "group_size": 2,
     "preferred_environment": "urban",
-    "budget_min": 100,
-    "budget_max": 150,
+    "budget_min": 50,
+    "budget_max": 500,
     "travel_dates": {
       "start": "2025-09-24",
       "end": "2025-09-25"
@@ -252,7 +252,7 @@
     }
   },
   {
-    "user_id": "U1000000022",
+    "user_id": "",
     "name": "Abigail",
     "group_size": 3,
     "preferred_environment": "suburban",

@@ -1,402 +1,1002 @@
 [
-    {
-        "property_id": 1,
-        "location": "Toronto Downtown",
-        "type": "penthouse",
-        "nightly_price": 136,
-        "features": ["parking", "soundproof", "pool", "spa"],
-        "tags": ["nightlife", "romantic", "beachfront", "urban"]
-    },
-    {
-        "property_id": 2,
-        "location": "Vancouver",
-        "type": "apartment",
-        "nightly_price": 120,
-        "features": ["terrace", "garden", "parking"],
-        "tags": ["business", "romantic", "adventure"]
-    },
-    {
-        "property_id": 3,
-        "location": "Montreal",
-        "type": "loft",
-        "nightly_price": 150,
-        "features": ["soundproof", "spa", "terrace"],
-        "tags": ["urban", "romantic", "cultural"]
-    },
-    {
-        "property_id": 4,
-        "location": "Banff",
-        "type": "cabin",
-        "nightly_price": 200,
-        "features": ["fireplace", "garden", "hot tub"],
-        "tags": ["adventure", "winter retreat", "spa access"]
-    },
-    {
-        "property_id": 5,
-        "location": "Whistler",
-        "type": "cottage",
-        "nightly_price": 180,
-        "features": ["canoe", "soundproof", "indoor pool"],
-        "tags": ["beachfront", "adventure", "pet-friendly"]
-    },
-    {
-        "property_id": 6,
-        "location": "Quebec City",
-        "type": "apartment",
-        "nightly_price": 140,
-        "features": ["terrace", "garden", "spa"],
-        "tags": ["romantic", "cultural", "urban"]
-    },
-    {
-        "property_id": 7,
-        "location": "Niagara Falls",
-        "type": "hotel",
-        "nightly_price": 170,
-        "features": ["pool", "spa", "soundproof"],
-        "tags": ["romantic", "adventure", "nightlife"]
-    },
-    {
-        "property_id": 8,
-        "location": "Toronto Midtown",
-        "type": "loft",
-        "nightly_price": 125,
-        "features": ["terrace", "spa"],
-        "tags": ["business", "urban", "romantic"]
-    },
-    {
-        "property_id": 9,
-        "location": "Whistler",
-        "type": "cottage",
-        "nightly_price": 228,
-        "features": ["canoe", "soundproof", "garden", "indoor pool", "hot tub"],
-        "tags": ["beachfront", "adventure", "pet-friendly", "winter retreat", "spa access"]
-    },
-    {
-        "property_id": 10,
-        "location": "Lake Louise",
-        "type": "penthouse",
-        "nightly_price": 266,
-        "features": ["spa", "terrace", "fireplace"],
-        "tags": ["adventure", "romantic", "winter retreat"]
-    },
-    {
-        "property_id": 11,
-        "location": "Calgary",
-        "type": "apartment",
-        "nightly_price": 130,
-        "features": ["parking", "soundproof", "garden"],
-        "tags": ["business", "urban", "adventure"]
-    },
-    {
-        "property_id": 12,
-        "location": "Ottawa",
-        "type": "penthouse",
-        "nightly_price": 145,
-        "features": ["terrace", "spa", "pool"],
-        "tags": ["cultural", "romantic", "urban"]
-    },
-    {
-        "property_id": 13,
-        "location": "Mont Tremblant",
-        "type": "cabin",
-        "nightly_price": 190,
-        "features": ["fireplace", "hot tub", "soundproof"],
-        "tags": ["adventure", "winter retreat", "spa access"]
-    },
-    {
-        "property_id": 14,
-        "location": "Victoria",
-        "type": "loft",
-        "nightly_price": 155,
-        "features": ["terrace", "garden", "soundproof"],
-        "tags": ["romantic", "urban", "beachfront"]
-    },
-    {
-        "property_id": 15,
-        "location": "Halifax",
-        "type": "apartment",
-        "nightly_price": 120,
-        "features": ["spa", "parking", "terrace"],
-        "tags": ["adventure", "business", "cultural"]
-    },
-    {
-        "property_id": 16,
-        "location": "Saskatoon",
-        "type": "cabin",
-        "nightly_price": 180,
-        "features": ["fireplace", "hot tub", "garden"],
-        "tags": ["winter retreat", "adventure", "romantic"]
-    },
-    {
-        "property_id": 17,
-        "location": "Regina",
-        "type": "penthouse",
-        "nightly_price": 140,
-        "features": ["spa", "soundproof", "terrace"],
-        "tags": ["urban", "business", "romantic"]
-    },
-    {
-        "property_id": 18,
-        "location": "Winnipeg",
-        "type": "loft",
-        "nightly_price": 125,
-        "features": ["terrace", "soundproof", "garden"],
-        "tags": ["urban", "adventure", "romantic"]
-    },
-    {
-        "property_id": 19,
-        "location": "Edmonton",
-        "type": "apartment",
-        "nightly_price": 135,
-        "features": ["pool", "spa", "parking"],
-        "tags": ["business", "urban", "adventure"]
-    },
-    {
-        "property_id": 20,
-        "location": "Quebec City",
-        "type": "cabin",
-        "nightly_price": 195,
-        "features": ["fireplace", "hot tub", "soundproof"],
-        "tags": ["winter retreat", "romantic", "spa access"]
-    },
-    {
-        "property_id": 21,
-        "location": "Banff",
-        "type": "penthouse",
-        "nightly_price": 260,
-        "features": ["spa", "terrace", "pool"],
-        "tags": ["adventure", "romantic", "winter retreat"]
-    },
-    {
-        "property_id": 22,
-        "location": "Whistler",
-        "type": "cottage",
-        "nightly_price": 225,
-        "features": ["canoe", "hot tub", "garden", "soundproof"],
-        "tags": ["beachfront", "adventure", "pet-friendly"]
-    },
-    {
-        "property_id": 23,
-        "location": "Montreal",
-        "type": "apartment",
-        "nightly_price": 145,
-        "features": ["terrace", "spa", "soundproof"],
-        "tags": ["urban", "romantic", "cultural"]
-    },
-    {
-        "property_id": 24,
-        "location": "Toronto Downtown",
-        "type": "loft",
-        "nightly_price": 150,
-        "features": ["parking", "spa", "terrace"],
-        "tags": ["nightlife", "romantic", "business"]
-    },
-    {
-        "property_id": 25,
-        "location": "Vancouver",
-        "type": "penthouse",
-        "nightly_price": 170,
-        "features": ["pool", "soundproof", "garden"],
-        "tags": ["urban", "beachfront", "romantic"]
-    },
-    {
-        "property_id": 26,
-        "location": "Halifax",
-        "type": "cabin",
-        "nightly_price": 185,
-        "features": ["fireplace", "hot tub", "terrace"],
-        "tags": ["adventure", "winter retreat", "spa access"]
-    },
-    {
-        "property_id": 27,
-        "location": "Ottawa",
-        "type": "apartment",
-        "nightly_price": 140,
-        "features": ["spa", "garden", "soundproof"],
-        "tags": ["cultural", "urban", "romantic"]
-    },
-    {
-        "property_id": 28,
-        "location": "Banff",
-        "type": "loft",
-        "nightly_price": 200,
-        "features": ["terrace", "spa", "fireplace"],
-        "tags": ["adventure", "winter retreat", "romantic"]
-    },
-    {
-        "property_id": 29,
-        "location": "Lake Louise",
-        "type": "penthouse",
-        "nightly_price": 270,
-        "features": ["spa", "terrace", "pool"],
-        "tags": ["adventure", "romantic", "winter retreat"]
-    },
-    {
-        "property_id": 30,
-        "location": "Victoria",
-        "type": "apartment",
-        "nightly_price": 145,
-        "features": ["soundproof", "terrace", "garden"],
-        "tags": ["romantic", "urban", "beachfront"]
-    },
-    {
-        "property_id": 31,
-        "location": "Mont Tremblant",
-        "type": "cabin",
-        "nightly_price": 190,
-        "features": ["fireplace", "hot tub", "spa"],
-        "tags": ["adventure", "winter retreat", "romantic"]
-    },
-    {
-        "property_id": 32,
-        "location": "Toronto Midtown",
-        "type": "loft",
-        "nightly_price": 130,
-        "features": ["terrace", "soundproof", "spa"],
-        "tags": ["business", "urban", "romantic"]
-    },
-    {
-        "property_id": 33,
-        "location": "Vancouver",
-        "type": "penthouse",
-        "nightly_price": 175,
-        "features": ["pool", "spa", "terrace"],
-        "tags": ["urban", "beachfront", "romantic"]
-    },
-    {
-        "property_id": 34,
-        "location": "Whistler",
-        "type": "cottage",
-        "nightly_price": 230,
-        "features": ["canoe", "hot tub", "indoor pool"],
-        "tags": ["adventure", "pet-friendly", "winter retreat"]
-    },
-    {
-        "property_id": 35,
-        "location": "Calgary",
-        "type": "apartment",
-        "nightly_price": 135,
-        "features": ["soundproof", "parking", "terrace"],
-        "tags": ["business", "urban", "adventure"]
-    },
-    {
-        "property_id": 36,
-        "location": "Ottawa",
-        "type": "loft",
-        "nightly_price": 140,
-        "features": ["spa", "garden", "terrace"],
-        "tags": ["cultural", "urban", "romantic"]
-    },
-    {
-        "property_id": 37,
-        "location": "Banff",
-        "type": "cabin",
-        "nightly_price": 205,
-        "features": ["fireplace", "hot tub", "soundproof"],
-        "tags": ["adventure", "winter retreat", "spa access"]
-    },
-    {
-        "property_id": 38,
-        "location": "Lake Louise",
-        "type": "penthouse",
-        "nightly_price": 275,
-        "features": ["spa", "terrace", "pool"],
-        "tags": ["adventure", "romantic", "winter retreat"]
-    },
-    {
-        "property_id": 39,
-        "location": "Montreal",
-        "type": "apartment",
-        "nightly_price": 150,
-        "features": ["soundproof", "terrace", "spa"],
-        "tags": ["urban", "romantic", "cultural"]
-    },
-    {
-        "property_id": 40,
-        "location": "Toronto Downtown",
-        "type": "loft",
-        "nightly_price": 155,
-        "features": ["parking", "spa", "terrace"],
-        "tags": ["nightlife", "romantic", "business"]
-    },
-    {
-        "property_id": 41,
-        "location": "Vancouver",
-        "type": "penthouse",
-        "nightly_price": 180,
-        "features": ["pool", "soundproof", "garden"],
-        "tags": ["urban", "beachfront", "romantic"]
-    },
-    {
-        "property_id": 42,
-        "location": "Halifax",
-        "type": "cabin",
-        "nightly_price": 190,
-        "features": ["fireplace", "hot tub", "terrace"],
-        "tags": ["adventure", "winter retreat", "spa access"]
-    },
-    {
-        "property_id": 43,
-        "location": "Ottawa",
-        "type": "apartment",
-        "nightly_price": 145,
-        "features": ["spa", "garden", "soundproof"],
-        "tags": ["cultural", "urban", "romantic"]
-    },
-    {
-        "property_id": 44,
-        "location": "Banff",
-        "type": "loft",
-        "nightly_price": 210,
-        "features": ["terrace", "spa", "fireplace"],
-        "tags": ["adventure", "winter retreat", "romantic"]
-    },
-    {
-        "property_id": 45,
-        "location": "Lake Louise",
-        "type": "penthouse",
-        "nightly_price": 280,
-        "features": ["spa", "terrace", "pool"],
-        "tags": ["adventure", "romantic", "winter retreat"]
-    },
-    {
-        "property_id": 46,
-        "location": "Victoria",
-        "type": "apartment",
-        "nightly_price": 150,
-        "features": ["soundproof", "terrace", "garden"],
-        "tags": ["romantic", "urban", "beachfront"]
-    },
-    {
-        "property_id": 47,
-        "location": "Mont Tremblant",
-        "type": "cabin",
-        "nightly_price": 195,
-        "features": ["fireplace", "hot tub", "spa"],
-        "tags": ["adventure", "winter retreat", "romantic"]
-    },
-    {
-        "property_id": 48,
-        "location": "Toronto Midtown",
-        "type": "loft",
-        "nightly_price": 135,
-        "features": ["terrace", "soundproof", "spa"],
-        "tags": ["business", "urban", "romantic"]
-    },
-    {
-        "property_id": 49,
-        "location": "Vancouver",
-        "type": "penthouse",
-        "nightly_price": 185,
-        "features": ["pool", "spa", "terrace"],
-        "tags": ["urban", "beachfront", "romantic"]
-    },
-    {
-        "property_id": 50,
-        "location": "Whistler",
-        "type": "cottage",
-        "nightly_price": 235,
-        "features": ["canoe", "hot tub", "indoor pool", "soundproof"],
-        "tags": ["adventure", "pet-friendly", "winter retreat", "spa access"]
-    }
+  {
+    "property_id": 1,
+    "location": "Halifax Harbour",
+    "type": "penthouse",
+    "nightly_price": 222,
+    "features": [
+      "ocean view",
+      "balcony",
+      "rooftop access",
+      "private garden"
+    ],
+    "tags": [
+      "family-friendly",
+      "luxury",
+      "historic",
+      "romantic",
+      "pet-friendly"
+    ],
+    "description": "A charming penthouse in Halifax Harbour with ocean view, balcony, rooftop access, private garden, pet-friendly."
+  },
+  {
+    "property_id": 2,
+    "location": "Niagara Falls",
+    "type": "villa",
+    "nightly_price": 238,
+    "features": [
+      "bbq grill",
+      "ski-in/ski-out",
+      "fireplace",
+      "air conditioning"
+    ],
+    "tags": [
+      "urban",
+      "relaxing",
+      "historic",
+      "romantic",
+      "pet-friendly"
+    ],
+    "description": "A luxurious villa in Niagara Falls with bbq grill, ski-in/ski-out, fireplace, air conditioning, pet-friendly."
+  },
+  {
+    "property_id": 3,
+    "location": "Niagara Falls",
+    "type": "villa",
+    "nightly_price": 140,
+    "features": [
+      "private garden",
+      "patio",
+      "wine cellar",
+      "jacuzzi"
+    ],
+    "tags": [
+      "nature",
+      "urban",
+      "cozy",
+      "winter sports",
+      "pet-friendly"
+    ],
+    "description": "A cozy villa in Niagara Falls with private garden, patio, wine cellar, jacuzzi, pet-friendly."
+  },
+  {
+    "property_id": 4,
+    "location": "Quebec City",
+    "type": "bungalow",
+    "nightly_price": 263,
+    "features": [
+      "rooftop access",
+      "air conditioning",
+      "fireplace",
+      "private garden"
+    ],
+    "tags": [
+      "relaxing",
+      "cozy",
+      "historic",
+      "work-friendly",
+      "pet-friendly"
+    ],
+    "description": "A cozy bungalow in Quebec City with rooftop access, air conditioning, fireplace, private garden, pet-friendly."
+  },
+  {
+    "property_id": 5,
+    "location": "Victoria Gardens",
+    "type": "loft",
+    "nightly_price": 130,
+    "features": [
+      "fireplace",
+      "balcony",
+      "wifi",
+      "garden view"
+    ],
+    "tags": [
+      "romantic",
+      "cozy",
+      "historic",
+      "nature",
+      "pet-friendly"
+    ],
+    "description": "A charming loft in Victoria Gardens with fireplace, balcony, wifi, garden view, pet-friendly."
+  },
+  {
+    "property_id": 6,
+    "location": "Quebec City",
+    "type": "cottage",
+    "nightly_price": 381,
+    "features": [
+      "ocean view",
+      "rooftop access",
+      "hot tub",
+      "wine cellar"
+    ],
+    "tags": [
+      "cozy",
+      "adventure",
+      "winter sports",
+      "work-friendly",
+      "pet-friendly"
+    ],
+    "description": "A luxurious cottage in Quebec City with ocean view, rooftop access, hot tub, wine cellar, pet-friendly."
+  },
+  {
+    "property_id": 7,
+    "location": "Montreal Old Town",
+    "type": "cottage",
+    "nightly_price": 378,
+    "features": [
+      "private garden",
+      "patio",
+      "balcony",
+      "rooftop access"
+    ],
+    "tags": [
+      "historic",
+      "relaxing",
+      "cozy",
+      "urban",
+      "pet-friendly"
+    ],
+    "description": "A charming cottage in Montreal Old Town with private garden, patio, balcony, rooftop access, pet-friendly."
+  },
+  {
+    "property_id": 8,
+    "location": "Quebec City",
+    "type": "penthouse",
+    "nightly_price": 384,
+    "features": [
+      "coffee machine",
+      "ski-in/ski-out",
+      "patio",
+      "jacuzzi"
+    ],
+    "tags": [
+      "adventure",
+      "romantic",
+      "winter sports",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A cozy penthouse in Quebec City with coffee machine, ski-in/ski-out, patio, jacuzzi, pet-friendly."
+  },
+  {
+    "property_id": 9,
+    "location": "Quebec City",
+    "type": "villa",
+    "nightly_price": 361,
+    "features": [
+      "patio",
+      "fireplace",
+      "smart lighting",
+      "wine cellar"
+    ],
+    "tags": [
+      "nature",
+      "work-friendly",
+      "family-friendly",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A modern villa in Quebec City with patio, fireplace, smart lighting, wine cellar, pet-friendly."
+  },
+  {
+    "property_id": 10,
+    "location": "Ottawa Riverside",
+    "type": "bungalow",
+    "nightly_price": 396,
+    "features": [
+      "bbq grill",
+      "ski-in/ski-out",
+      "patio",
+      "smart lighting"
+    ],
+    "tags": [
+      "family-friendly",
+      "cozy",
+      "nature",
+      "historic",
+      "pet-friendly"
+    ],
+    "description": "A cozy bungalow in Ottawa Riverside with bbq grill, ski-in/ski-out, patio, smart lighting, pet-friendly."
+  },
+  {
+    "property_id": 11,
+    "location": "Whistler Mountain",
+    "type": "loft",
+    "nightly_price": 450,
+    "features": [
+      "ski-in/ski-out",
+      "city view",
+      "coffee machine",
+      "fireplace"
+    ],
+    "tags": [
+      "urban",
+      "historic",
+      "modern",
+      "adventure",
+      "pet-friendly"
+    ],
+    "description": "A luxurious loft in Whistler Mountain with ski-in/ski-out, city view, coffee machine, fireplace, pet-friendly."
+  },
+  {
+    "property_id": 12,
+    "location": "Vancouver Waterfront",
+    "type": "bungalow",
+    "nightly_price": 354,
+    "features": [
+      "wine cellar",
+      "mountain view",
+      "pool",
+      "jacuzzi"
+    ],
+    "tags": [
+      "romantic",
+      "nature",
+      "urban",
+      "cozy",
+      "pet-friendly"
+    ],
+    "description": "A spacious bungalow in Vancouver Waterfront with wine cellar, mountain view, pool, jacuzzi, pet-friendly."
+  },
+  {
+    "property_id": 13,
+    "location": "Halifax Harbour",
+    "type": "chalet",
+    "nightly_price": 406,
+    "features": [
+      "wine cellar",
+      "smart lighting",
+      "hot tub",
+      "private garden"
+    ],
+    "tags": [
+      "luxury",
+      "nature",
+      "relaxing",
+      "urban",
+      "pet-friendly"
+    ],
+    "description": "A cozy chalet in Halifax Harbour with wine cellar, smart lighting, hot tub, private garden, pet-friendly."
+  },
+  {
+    "property_id": 14,
+    "location": "Whistler Mountain",
+    "type": "bungalow",
+    "nightly_price": 425,
+    "features": [
+      "jacuzzi",
+      "bbq grill",
+      "wine cellar",
+      "private garden"
+    ],
+    "tags": [
+      "urban",
+      "adventure",
+      "work-friendly",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A modern bungalow in Whistler Mountain with jacuzzi, bbq grill, wine cellar, private garden, pet-friendly."
+  },
+  {
+    "property_id": 15,
+    "location": "Toronto Downtown",
+    "type": "chalet",
+    "nightly_price": 272,
+    "features": [
+      "ocean view",
+      "bbq grill",
+      "garden view",
+      "air conditioning"
+    ],
+    "tags": [
+      "work-friendly",
+      "nature",
+      "cozy",
+      "urban",
+      "pet-friendly"
+    ],
+    "description": "A cozy chalet in Toronto Downtown with ocean view, bbq grill, garden view, air conditioning, pet-friendly."
+  },
+  {
+    "property_id": 16,
+    "location": "Victoria Gardens",
+    "type": "cabin",
+    "nightly_price": 143,
+    "features": [
+      "bbq grill",
+      "hot tub",
+      "pool",
+      "deck"
+    ],
+    "tags": [
+      "modern",
+      "winter sports",
+      "family-friendly",
+      "romantic",
+      "pet-friendly"
+    ],
+    "description": "A spacious cabin in Victoria Gardens with bbq grill, hot tub, pool, deck, pet-friendly."
+  },
+  {
+    "property_id": 17,
+    "location": "Whistler Mountain",
+    "type": "villa",
+    "nightly_price": 228,
+    "features": [
+      "patio",
+      "ski-in/ski-out",
+      "ocean view",
+      "fireplace"
+    ],
+    "tags": [
+      "winter sports",
+      "urban",
+      "relaxing",
+      "nature",
+      "pet-friendly"
+    ],
+    "description": "A luxurious villa in Whistler Mountain with patio, ski-in/ski-out, ocean view, fireplace, pet-friendly."
+  },
+  {
+    "property_id": 18,
+    "location": "Vancouver Waterfront",
+    "type": "loft",
+    "nightly_price": 177,
+    "features": [
+      "bbq grill",
+      "deck",
+      "smart lighting",
+      "rooftop access"
+    ],
+    "tags": [
+      "family-friendly",
+      "adventure",
+      "luxury",
+      "cozy",
+      "pet-friendly"
+    ],
+    "description": "A modern loft in Vancouver Waterfront with bbq grill, deck, smart lighting, rooftop access, pet-friendly."
+  },
+  {
+    "property_id": 19,
+    "location": "Ottawa Riverside",
+    "type": "cottage",
+    "nightly_price": 353,
+    "features": [
+      "balcony",
+      "hot tub",
+      "ski-in/ski-out",
+      "garden view"
+    ],
+    "tags": [
+      "cozy",
+      "work-friendly",
+      "romantic",
+      "winter sports",
+      "pet-friendly"
+    ],
+    "description": "A charming cottage in Ottawa Riverside with balcony, hot tub, ski-in/ski-out, garden view, pet-friendly."
+  },
+  {
+    "property_id": 20,
+    "location": "Vancouver Waterfront",
+    "type": "loft",
+    "nightly_price": 349,
+    "features": [
+      "jacuzzi",
+      "private garden",
+      "smart lighting",
+      "coffee machine"
+    ],
+    "tags": [
+      "work-friendly",
+      "modern",
+      "historic",
+      "luxury",
+      "pet-friendly"
+    ],
+    "description": "A modern loft in Vancouver Waterfront with jacuzzi, private garden, smart lighting, coffee machine, pet-friendly."
+  },
+  {
+    "property_id": 21,
+    "location": "Victoria Gardens",
+    "type": "cottage",
+    "nightly_price": 313,
+    "features": [
+      "coffee machine",
+      "fireplace",
+      "bbq grill",
+      "jacuzzi"
+    ],
+    "tags": [
+      "modern",
+      "nature",
+      "winter sports",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A luxurious cottage in Victoria Gardens with coffee machine, fireplace, bbq grill, jacuzzi, pet-friendly."
+  },
+  {
+    "property_id": 22,
+    "location": "Halifax Harbour",
+    "type": "cottage",
+    "nightly_price": 276,
+    "features": [
+      "wifi",
+      "coffee machine",
+      "pool",
+      "patio"
+    ],
+    "tags": [
+      "historic",
+      "urban",
+      "luxury",
+      "cozy",
+      "pet-friendly"
+    ],
+    "description": "A spacious cottage in Halifax Harbour with wifi, coffee machine, pool, patio, pet-friendly."
+  },
+  {
+    "property_id": 23,
+    "location": "Whistler Mountain",
+    "type": "villa",
+    "nightly_price": 272,
+    "features": [
+      "pool",
+      "wine cellar",
+      "mountain view",
+      "hot tub"
+    ],
+    "tags": [
+      "adventure",
+      "relaxing",
+      "family-friendly",
+      "romantic",
+      "pet-friendly"
+    ],
+    "description": "A spacious villa in Whistler Mountain with pool, wine cellar, mountain view, hot tub, pet-friendly."
+  },
+  {
+    "property_id": 24,
+    "location": "Niagara Falls",
+    "type": "penthouse",
+    "nightly_price": 415,
+    "features": [
+      "hot tub",
+      "wifi",
+      "garden view",
+      "ski-in/ski-out"
+    ],
+    "tags": [
+      "nature",
+      "work-friendly",
+      "winter sports",
+      "romantic",
+      "pet-friendly"
+    ],
+    "description": "A charming penthouse in Niagara Falls with hot tub, wifi, garden view, ski-in/ski-out, pet-friendly."
+  },
+  {
+    "property_id": 25,
+    "location": "Quebec City",
+    "type": "chalet",
+    "nightly_price": 253,
+    "features": [
+      "hot tub",
+      "wifi",
+      "pool",
+      "patio"
+    ],
+    "tags": [
+      "work-friendly",
+      "winter sports",
+      "urban",
+      "cozy",
+      "pet-friendly"
+    ],
+    "description": "A spacious chalet in Quebec City with hot tub, wifi, pool, patio, pet-friendly."
+  },
+  {
+    "property_id": 26,
+    "location": "Victoria Gardens",
+    "type": "cabin",
+    "nightly_price": 260,
+    "features": [
+      "private garden",
+      "air conditioning",
+      "deck",
+      "balcony"
+    ],
+    "tags": [
+      "urban",
+      "winter sports",
+      "cozy",
+      "historic",
+      "pet-friendly"
+    ],
+    "description": "A modern cabin in Victoria Gardens with private garden, air conditioning, deck, balcony, pet-friendly."
+  },
+  {
+    "property_id": 27,
+    "location": "Toronto Downtown",
+    "type": "cabin",
+    "nightly_price": 414,
+    "features": [
+      "hot tub",
+      "patio",
+      "garden view",
+      "private garden"
+    ],
+    "tags": [
+      "family-friendly",
+      "modern",
+      "romantic",
+      "cozy",
+      "pet-friendly"
+    ],
+    "description": "A cozy cabin in Toronto Downtown with hot tub, patio, garden view, private garden, pet-friendly."
+  },
+  {
+    "property_id": 28,
+    "location": "Montreal Old Town",
+    "type": "bungalow",
+    "nightly_price": 416,
+    "features": [
+      "city view",
+      "wine cellar",
+      "pool",
+      "fireplace"
+    ],
+    "tags": [
+      "urban",
+      "cozy",
+      "adventure",
+      "historic",
+      "pet-friendly"
+    ],
+    "description": "A cozy bungalow in Montreal Old Town with city view, wine cellar, pool, fireplace, pet-friendly."
+  },
+  {
+    "property_id": 29,
+    "location": "Quebec City",
+    "type": "villa",
+    "nightly_price": 284,
+    "features": [
+      "wine cellar",
+      "fireplace",
+      "garden view",
+      "bbq grill"
+    ],
+    "tags": [
+      "family-friendly",
+      "adventure",
+      "urban",
+      "nature",
+      "pet-friendly"
+    ],
+    "description": "A cozy villa in Quebec City with wine cellar, fireplace, garden view, bbq grill, pet-friendly."
+  },
+  {
+    "property_id": 30,
+    "location": "Banff Upper Town",
+    "type": "cottage",
+    "nightly_price": 405,
+    "features": [
+      "deck",
+      "wine cellar",
+      "smart lighting",
+      "rooftop access"
+    ],
+    "tags": [
+      "work-friendly",
+      "historic",
+      "adventure",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A cozy cottage in Banff Upper Town with deck, wine cellar, smart lighting, rooftop access, pet-friendly."
+  },
+  {
+    "property_id": 31,
+    "location": "Whistler Mountain",
+    "type": "loft",
+    "nightly_price": 438,
+    "features": [
+      "garden view",
+      "coffee machine",
+      "rooftop access",
+      "deck"
+    ],
+    "tags": [
+      "nature",
+      "modern",
+      "romantic",
+      "historic",
+      "pet-friendly"
+    ],
+    "description": "A modern loft in Whistler Mountain with garden view, coffee machine, rooftop access, deck, pet-friendly."
+  },
+  {
+    "property_id": 32,
+    "location": "Toronto Downtown",
+    "type": "apartment",
+    "nightly_price": 152,
+    "features": [
+      "wine cellar",
+      "rooftop access",
+      "deck",
+      "private garden"
+    ],
+    "tags": [
+      "romantic",
+      "historic",
+      "nature",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A modern apartment in Toronto Downtown with wine cellar, rooftop access, deck, private garden, pet-friendly."
+  },
+  {
+    "property_id": 33,
+    "location": "Montreal Old Town",
+    "type": "apartment",
+    "nightly_price": 408,
+    "features": [
+      "patio",
+      "private garden",
+      "ocean view",
+      "wifi"
+    ],
+    "tags": [
+      "urban",
+      "cozy",
+      "adventure",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A spacious apartment in Montreal Old Town with patio, private garden, ocean view, wifi, pet-friendly."
+  },
+  {
+    "property_id": 34,
+    "location": "Ottawa Riverside",
+    "type": "penthouse",
+    "nightly_price": 303,
+    "features": [
+      "pool",
+      "city view",
+      "fireplace",
+      "coffee machine"
+    ],
+    "tags": [
+      "adventure",
+      "modern",
+      "family-friendly",
+      "luxury",
+      "pet-friendly"
+    ],
+    "description": "A charming penthouse in Ottawa Riverside with pool, city view, fireplace, coffee machine, pet-friendly."
+  },
+  {
+    "property_id": 35,
+    "location": "Montreal Old Town",
+    "type": "villa",
+    "nightly_price": 216,
+    "features": [
+      "rooftop access",
+      "deck",
+      "coffee machine",
+      "hot tub"
+    ],
+    "tags": [
+      "modern",
+      "historic",
+      "family-friendly",
+      "winter sports",
+      "pet-friendly"
+    ],
+    "description": "A luxurious villa in Montreal Old Town with rooftop access, deck, coffee machine, hot tub, pet-friendly."
+  },
+  {
+    "property_id": 36,
+    "location": "Toronto Downtown",
+    "type": "bungalow",
+    "nightly_price": 382,
+    "features": [
+      "deck",
+      "fireplace",
+      "air conditioning",
+      "bbq grill"
+    ],
+    "tags": [
+      "historic",
+      "adventure",
+      "relaxing",
+      "winter sports",
+      "pet-friendly"
+    ],
+    "description": "A spacious bungalow in Toronto Downtown with deck, fireplace, air conditioning, bbq grill, pet-friendly."
+  },
+  {
+    "property_id": 37,
+    "location": "Quebec City",
+    "type": "chalet",
+    "nightly_price": 415,
+    "features": [
+      "pool",
+      "balcony",
+      "ocean view",
+      "rooftop access"
+    ],
+    "tags": [
+      "family-friendly",
+      "modern",
+      "romantic",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A charming chalet in Quebec City with pool, balcony, ocean view, rooftop access, pet-friendly."
+  },
+  {
+    "property_id": 38,
+    "location": "Toronto Downtown",
+    "type": "bungalow",
+    "nightly_price": 366,
+    "features": [
+      "ski-in/ski-out",
+      "jacuzzi",
+      "hot tub",
+      "coffee machine"
+    ],
+    "tags": [
+      "cozy",
+      "modern",
+      "family-friendly",
+      "nature",
+      "pet-friendly"
+    ],
+    "description": "A spacious bungalow in Toronto Downtown with ski-in/ski-out, jacuzzi, hot tub, coffee machine, pet-friendly."
+  },
+  {
+    "property_id": 39,
+    "location": "Montreal Old Town",
+    "type": "cabin",
+    "nightly_price": 257,
+    "features": [
+      "smart lighting",
+      "garden view",
+      "patio",
+      "mountain view"
+    ],
+    "tags": [
+      "urban",
+      "adventure",
+      "modern",
+      "work-friendly",
+      "pet-friendly"
+    ],
+    "description": "A spacious cabin in Montreal Old Town with smart lighting, garden view, patio, mountain view, pet-friendly."
+  },
+  {
+    "property_id": 40,
+    "location": "Montreal Old Town",
+    "type": "apartment",
+    "nightly_price": 202,
+    "features": [
+      "balcony",
+      "wine cellar",
+      "mountain view",
+      "patio"
+    ],
+    "tags": [
+      "cozy",
+      "work-friendly",
+      "nature",
+      "winter sports",
+      "pet-friendly"
+    ],
+    "description": "A luxurious apartment in Montreal Old Town with balcony, wine cellar, mountain view, patio, pet-friendly."
+  },
+  {
+    "property_id": 41,
+    "location": "Whistler Mountain",
+    "type": "penthouse",
+    "nightly_price": 361,
+    "features": [
+      "smart lighting",
+      "patio",
+      "private garden",
+      "bbq grill"
+    ],
+    "tags": [
+      "relaxing",
+      "modern",
+      "urban",
+      "winter sports",
+      "pet-friendly"
+    ],
+    "description": "A cozy penthouse in Whistler Mountain with smart lighting, patio, private garden, bbq grill, pet-friendly."
+  },
+  {
+    "property_id": 42,
+    "location": "Victoria Gardens",
+    "type": "cabin",
+    "nightly_price": 411,
+    "features": [
+      "smart lighting",
+      "bbq grill",
+      "ski-in/ski-out",
+      "jacuzzi"
+    ],
+    "tags": [
+      "modern",
+      "family-friendly",
+      "work-friendly",
+      "relaxing",
+      "pet-friendly"
+    ],
+    "description": "A modern cabin in Victoria Gardens with smart lighting, bbq grill, ski-in/ski-out, jacuzzi, pet-friendly."
+  },
+  {
+    "property_id": 43,
+    "location": "Victoria Gardens",
+    "type": "chalet",
+    "nightly_price": 332,
+    "features": [
+      "private garden",
+      "air conditioning",
+      "ski-in/ski-out",
+      "garden view"
+    ],
+    "tags": [
+      "winter sports",
+      "nature",
+      "urban",
+      "historic",
+      "pet-friendly"
+    ],
+    "description": "A modern chalet in Victoria Gardens with private garden, air conditioning, ski-in/ski-out, garden view, pet-friendly."
+  },
+  {
+    "property_id": 44,
+    "location": "Ottawa Riverside",
+    "type": "cottage",
+    "nightly_price": 432,
+    "features": [
+      "wifi",
+      "deck",
+      "wine cellar",
+      "bbq grill"
+    ],
+    "tags": [
+      "romantic",
+      "family-friendly",
+      "adventure",
+      "luxury",
+      "pet-friendly"
+    ],
+    "description": "A cozy cottage in Ottawa Riverside with wifi, deck, wine cellar, bbq grill, pet-friendly."
+  },
+  {
+    "property_id": 45,
+    "location": "Montreal Old Town",
+    "type": "loft",
+    "nightly_price": 285,
+    "features": [
+      "deck",
+      "coffee machine",
+      "mountain view",
+      "hot tub"
+    ],
+    "tags": [
+      "luxury",
+      "adventure",
+      "urban",
+      "family-friendly",
+      "pet-friendly"
+    ],
+    "description": "A charming loft in Montreal Old Town with deck, coffee machine, mountain view, hot tub, pet-friendly."
+  },
+  {
+    "property_id": 46,
+    "location": "Victoria Gardens",
+    "type": "bungalow",
+    "nightly_price": 307,
+    "features": [
+      "wine cellar",
+      "jacuzzi",
+      "hot tub",
+      "fireplace"
+    ],
+    "tags": [
+      "historic",
+      "adventure",
+      "romantic",
+      "modern",
+      "pet-friendly"
+    ],
+    "description": "A luxurious bungalow in Victoria Gardens with wine cellar, jacuzzi, hot tub, fireplace, pet-friendly."
+  },
+  {
+    "property_id": 47,
+    "location": "Halifax Harbour",
+    "type": "cabin",
+    "nightly_price": 224,
+    "features": [
+      "rooftop access",
+      "bbq grill",
+      "private garden",
+      "wine cellar"
+    ],
+    "tags": [
+      "family-friendly",
+      "historic",
+      "work-friendly",
+      "modern",
+      "pet-friendly"
+    ],
+    "description": "A luxurious cabin in Halifax Harbour with rooftop access, bbq grill, private garden, wine cellar, pet-friendly."
+  },
+  {
+    "property_id": 48,
+    "location": "Quebec City",
+    "type": "bungalow",
+    "nightly_price": 130,
+    "features": [
+      "ocean view",
+      "city view",
+      "air conditioning",
+      "jacuzzi"
+    ],
+    "tags": [
+      "relaxing",
+      "work-friendly",
+      "nature",
+      "family-friendly",
+      "pet-friendly"
+    ],
+    "description": "A modern bungalow in Quebec City with ocean view, city view, air conditioning, jacuzzi, pet-friendly."
+  },
+  {
+    "property_id": 49,
+    "location": "Banff Upper Town",
+    "type": "penthouse",
+    "nightly_price": 220,
+    "features": [
+      "fireplace",
+      "hot tub",
+      "jacuzzi",
+      "deck"
+    ],
+    "tags": [
+      "luxury",
+      "nature",
+      "historic",
+      "romantic",
+      "pet-friendly"
+    ],
+    "description": "A cozy penthouse in Banff Upper Town with fireplace, hot tub, jacuzzi, deck, pet-friendly."
+  },
+  {
+    "property_id": 50,
+    "location": "Victoria Gardens",
+    "type": "loft",
+    "nightly_price": 276,
+    "features": [
+      "patio",
+      "smart lighting",
+      "pool",
+      "wine cellar"
+    ],
+    "tags": [
+      "romantic",
+      "family-friendly",
+      "luxury",
+      "modern",
+      "pet-friendly"
+    ],
+    "description": "A modern loft in Victoria Gardens with patio, smart lighting, pool, wine cellar, pet-friendly."
+  }
 ]
