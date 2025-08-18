@@ -1,0 +1,49 @@
+[
+  {
+    "property_id": 1,
+    "location": "Lake Muskoka",
+    "price_per_night": 180,
+    "features": [
+      "fireplace",
+      "canoe",
+      "bbq"
+    ],
+    "tags": [
+      "lakefront",
+      "family-friendly",
+      "nature"
+    ]
+  },
+  {
+    "property_id": 2,
+    "location": "Toronto Downtown",
+    "type": "condo",
+    "price_per_night": 220,
+    "features": [
+      "wifi",
+      "parking",
+      "gym"
+    ],
+    "tags": [
+      "urban",
+      "nightlife",
+      "business"
+    ]
+  },
+  {
+    "property_id": 3,
+    "location": "Blue Mountain",
+    "type": "chalet",
+    "price_per_night": 250,
+    "features": [
+      "ski-in",
+      "hot tub",
+      "fireplace"
+    ],
+    "tags": [
+      "skiing",
+      "luxury",
+      "mountains"
+    ]
+  }
+]
