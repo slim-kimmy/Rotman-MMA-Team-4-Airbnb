@@ -1,6 +1,7 @@
 [
   {
     "property_id": 1,
+<<<<<<< HEAD
     "location": "Halifax Harbour",
     "type": "penthouse",
     "nightly_price": 222,
@@ -1000,3 +1001,404 @@
     "description": "A modern loft in Victoria Gardens with patio, smart lighting, pool, wine cellar, pet-friendly."
   }
 ]
+=======
+    "location": "Toronto Downtown",
+    "type": "penthouse",
+    "nightly_price": 310,
+    "features": ["waterfront view", "jacuzzi", "smart lighting", "wine cellar"],
+    "tags": ["luxury", "urban", "romantic", "relaxing", "modern"]
+  },
+  {
+    "property_id": 2,
+    "location": "Vancouver West",
+    "type": "apartment",
+    "nightly_price": 180,
+    "features": ["balcony", "rooftop access", "electric fireplace", "coffee machine"],
+    "tags": ["modern", "chic", "urban", "bright", "energetic"]
+  },
+  {
+    "property_id": 3,
+    "location": "Banff Upper Town",
+    "type": "chalet",
+    "nightly_price": 225,
+    "features": ["panoramic windows", "hot tub", "fireplace", "ski-in access"],
+    "tags": ["adventure", "scenic", "cozy", "luxury", "winter retreat"]
+  },
+  {
+    "property_id": 4,
+    "location": "Ottawa Centretown",
+    "type": "townhouse",
+    "nightly_price": 155,
+    "features": ["private garden", "bookshelf", "workspace", "espresso machine"],
+    "tags": ["productive", "cozy", "urban", "quiet", "historic"]
+  },
+  {
+    "property_id": 5,
+    "location": "Montreal Old Port",
+    "type": "loft",
+    "nightly_price": 165,
+    "features": ["exposed beams", "balcony", "artwork", "wine fridge"],
+    "tags": ["cultural", "artistic", "romantic", "creative", "historic"]
+  },
+  {
+    "property_id": 6,
+    "location": "Whistler Creekside",
+    "type": "cottage",
+    "nightly_price": 245,
+    "features": ["indoor pool", "fire pit", "sauna", "game room"],
+    "tags": ["adventure", "family-friendly", "pet-friendly", "relaxing", "cozy"]
+  },
+  {
+    "property_id": 7,
+    "location": "Victoria Inner Harbour",
+    "type": "apartment",
+    "nightly_price": 155,
+    "features": ["garden view", "workspace nook", "terrace", "espresso machine"],
+    "tags": ["romantic", "bright", "urban", "cozy", "eco-conscious"]
+  },
+  {
+    "property_id": 8,
+    "location": "Mont Tremblant",
+    "type": "chalet",
+    "nightly_price": 210,
+    "features": ["fireplace", "hot tub", "ski locker", "panoramic windows"],
+    "tags": ["winter retreat", "adventure", "scenic", "cozy", "romantic"]
+  },
+  {
+    "property_id": 9,
+    "location": "Toronto Harbourfront",
+    "type": "penthouse",
+    "nightly_price": 320,
+    "features": ["waterfront view", "jacuzzi", "wine cellar", "smart home"],
+    "tags": ["luxury", "romantic", "urban", "modern", "relaxing"]
+  },
+  {
+    "property_id": 10,
+    "location": "Vancouver Downtown",
+    "type": "loft",
+    "nightly_price": 190,
+    "features": ["balcony", "rooftop access", "art wall", "workspace"],
+    "tags": ["urban", "creative", "energetic", "bright", "modern"]
+  },
+  {
+    "property_id": 11,
+    "location": "Whistler Village",
+    "type": "cottage",
+    "nightly_price": 250,
+    "features": ["canoe", "hot tub", "indoor pool", "fireplace", "sauna"],
+    "tags": ["adventure", "pet-friendly", "family-friendly", "luxury", "cozy"]
+  },
+  {
+    "property_id": 12,
+    "location": "Kelowna",
+    "type": "villa",
+    "nightly_price": 300,
+    "features": ["private dock", "vineyard view", "heated pool", "sauna"],
+    "tags": ["luxury", "tranquil", "nature", "romantic", "sunset-view"]
+  },
+  {
+    "property_id": 13,
+    "location": "Jasper",
+    "type": "chalet",
+    "nightly_price": 220,
+    "features": ["mountain view", "fire pit", "wood stove", "hiking gear"],
+    "tags": ["adventure", "scenic", "cozy", "wildlife", "peaceful"]
+  },
+  {
+    "property_id": 14,
+    "location": "Montreal Plateau",
+    "type": "studio",
+    "nightly_price": 110,
+    "features": ["murals", "bicycle rental", "compact kitchen", "record player"],
+    "tags": ["artistic", "hipster", "urban", "creative", "playful"]
+  },
+  {
+    "property_id": 15,
+    "location": "Tofino",
+    "type": "cabin",
+    "nightly_price": 195,
+    "features": ["ocean view", "kayak", "fireplace", "eco-friendly design"],
+    "tags": ["nature", "adventure", "relaxing", "surfing", "eco-conscious"]
+  },
+  {
+    "property_id": 16,
+    "location": "Ottawa Glebe",
+    "type": "townhouse",
+    "nightly_price": 160,
+    "features": ["private garden", "home office", "fire pit", "bookshelf"],
+    "tags": ["family-friendly", "cozy", "quiet", "historic", "urban"]
+  },
+  {
+    "property_id": 17,
+    "location": "Vancouver West",
+    "type": "apartment",
+    "nightly_price": 180,
+    "features": ["balcony", "rooftop access", "electric fireplace", "coffee machine"],
+    "tags": ["modern", "chic", "urban", "bright", "energetic"]
+  },
+  {
+    "property_id": 18,
+    "location": "Banff",
+    "type": "cabin",
+    "nightly_price": 215,
+    "features": ["stone fireplace", "hot tub", "ski storage", "panoramic windows"],
+    "tags": ["scenic", "winter retreat", "adventure", "cozy", "majestic"]
+  },
+  {
+    "property_id": 19,
+    "location": "Quebec Old Town",
+    "type": "loft",
+    "nightly_price": 155,
+    "features": ["exposed beams", "art collection", "wine fridge", "historic architecture"],
+    "tags": ["cultural", "luxury", "romantic", "historic", "creative"]
+  },
+  {
+    "property_id": 20,
+    "location": "Whistler Village",
+    "type": "cottage",
+    "nightly_price": 240,
+    "features": ["sauna", "indoor fireplace", "ski-in access", "game room"],
+    "tags": ["adventure", "family-friendly", "pet-friendly", "cozy", "sporty"]
+  },
+  {
+    "property_id": 21,
+    "location": "Toronto Harbourfront",
+    "type": "penthouse",
+    "nightly_price": 310,
+    "features": ["waterfront view", "jacuzzi", "smart lighting", "wine cellar"],
+    "tags": ["luxury", "urban", "romantic", "relaxing", "modern"]
+  },
+  {
+    "property_id": 22,
+    "location": "Victoria Downtown",
+    "type": "apartment",
+    "nightly_price": 145,
+    "features": ["rooftop garden", "bicycle rack", "coffee bar", "workspace nook"],
+    "tags": ["bright", "creative", "romantic", "urban", "eco-conscious"]
+  },
+  {
+    "property_id": 23,
+    "location": "Lake Louise",
+    "type": "chalet",
+    "nightly_price": 280,
+    "features": ["lake view", "canoe", "fire pit", "sauna", "heated floors"],
+    "tags": ["adventure", "romantic", "scenic", "relaxing", "luxury"]
+  },
+  {
+    "property_id": 24,
+    "location": "Calgary Beltline",
+    "type": "studio",
+    "nightly_price": 120,
+    "features": ["smart TV", "compact kitchen", "workspace", "city view"],
+    "tags": ["urban", "minimalist", "productive", "energetic", "bright"]
+  },
+  {
+    "property_id": 25,
+    "location": "Mont Tremblant",
+    "type": "cabin",
+    "nightly_price": 200,
+    "features": ["fireplace", "hot tub", "snowshoes", "ski locker"],
+    "tags": ["winter retreat", "adventure", "cozy", "scenic", "peaceful"]
+  },
+  {
+    "property_id": 26,
+    "location": "Halifax Waterfront",
+    "type": "apartment",
+    "nightly_price": 150,
+    "features": ["ocean view", "balcony", "parking", "espresso machine"],
+    "tags": ["relaxing", "coastal", "bright", "urban", "charming"]
+  },
+  {
+    "property_id": 27,
+    "location": "Winnipeg Exchange District",
+    "type": "loft",
+    "nightly_price": 135,
+    "features": ["exposed brick", "gallery wall", "sound system", "workspace"],
+    "tags": ["artistic", "creative", "urban", "energetic", "hipster"]
+  },
+  {
+    "property_id": 28,
+    "location": "Edmonton River Valley",
+    "type": "apartment",
+    "nightly_price": 145,
+    "features": ["balcony", "river view", "gym access", "workspace"],
+    "tags": ["active", "urban", "bright", "productive", "relaxing"]
+  },
+  {
+    "property_id": 29,
+    "location": "Saskatoon",
+    "type": "cabin",
+    "nightly_price": 190,
+    "features": ["fire pit", "garden", "hammock", "kayak storage"],
+    "tags": ["nature", "relaxing", "adventure", "cozy", "peaceful"]
+  },
+  {
+    "property_id": 30,
+    "location": "Regina",
+    "type": "penthouse",
+    "nightly_price": 160,
+    "features": ["rooftop terrace", "jacuzzi", "smart home", "gym access"],
+    "tags": ["luxury", "urban", "bright", "productive", "modern"]
+  },
+  {
+    "property_id": 31,
+    "location": "Victoria Downtown",
+    "type": "apartment",
+    "nightly_price": 145,
+    "features": ["rooftop garden", "bicycle rack", "coffee bar", "workspace nook"],
+    "tags": ["bright", "creative", "romantic", "urban", "eco-conscious"]
+  },
+  {
+    "property_id": 32,
+    "location": "Lake Louise",
+    "type": "chalet",
+    "nightly_price": 280,
+    "features": ["lake view", "canoe", "fire pit", "sauna", "heated floors"],
+    "tags": ["adventure", "romantic", "scenic", "relaxing", "luxury"]
+  },
+  {
+    "property_id": 33,
+    "location": "Calgary Beltline",
+    "type": "studio",
+    "nightly_price": 120,
+    "features": ["smart TV", "compact kitchen", "workspace", "city view"],
+    "tags": ["urban", "minimalist", "productive", "energetic", "bright"]
+  },
+  {
+    "property_id": 34,
+    "location": "Mont Tremblant",
+    "type": "cabin",
+    "nightly_price": 200,
+    "features": ["fireplace", "hot tub", "snowshoes", "ski locker"],
+    "tags": ["winter retreat", "adventure", "cozy", "scenic", "peaceful"]
+  },
+  {
+    "property_id": 35,
+    "location": "Halifax Waterfront",
+    "type": "apartment",
+    "nightly_price": 150,
+    "features": ["ocean view", "balcony", "parking", "espresso machine"],
+    "tags": ["relaxing", "coastal", "bright", "urban", "charming"]
+  },
+  {
+    "property_id": 36,
+    "location": "Winnipeg Exchange District",
+    "type": "loft",
+    "nightly_price": 135,
+    "features": ["exposed brick", "gallery wall", "sound system", "workspace"],
+    "tags": ["artistic", "creative", "urban", "energetic", "hipster"]
+  },
+  {
+    "property_id": 37,
+    "location": "Edmonton River Valley",
+    "type": "apartment",
+    "nightly_price": 145,
+    "features": ["balcony", "river view", "gym access", "workspace"],
+    "tags": ["active", "urban", "bright", "productive", "relaxing"]
+  },
+  {
+    "property_id": 38,
+    "location": "Saskatoon",
+    "type": "cabin",
+    "nightly_price": 190,
+    "features": ["fire pit", "garden", "hammock", "kayak storage"],
+    "tags": ["nature", "relaxing", "adventure", "cozy", "peaceful"]
+  },
+  {
+    "property_id": 39,
+    "location": "Regina",
+    "type": "penthouse",
+    "nightly_price": 160,
+    "features": ["rooftop terrace", "jacuzzi", "smart home", "gym access"],
+    "tags": ["luxury", "urban", "bright", "productive", "modern"]
+  },
+  {
+    "property_id": 40,
+    "location": "Toronto Midtown",
+    "type": "loft",
+    "nightly_price": 140,
+    "features": ["workspace nook", "soundproof", "rooftop garden", "espresso machine"],
+    "tags": ["productive", "romantic", "urban", "modern", "cozy"]
+  },
+  {
+    "property_id": 41,
+    "location": "Vancouver Kitsilano",
+    "type": "apartment",
+    "nightly_price": 185,
+    "features": ["ocean view", "yoga mat", "bicycle storage", "smart lighting"],
+    "tags": ["active", "relaxing", "beachfront", "bright", "eco-conscious"]
+  },
+  {
+    "property_id": 42,
+    "location": "Banff Upper Town",
+    "type": "chalet",
+    "nightly_price": 225,
+    "features": ["panoramic windows", "hot tub", "fireplace", "ski-in access"],
+    "tags": ["adventure", "scenic", "cozy", "luxury", "winter retreat"]
+  },
+  {
+    "property_id": 43,
+    "location": "Ottawa Centretown",
+    "type": "townhouse",
+    "nightly_price": 155,
+    "features": ["private garden", "bookshelf", "workspace", "espresso machine"],
+    "tags": ["productive", "cozy", "urban", "quiet", "historic"]
+  },
+  {
+    "property_id": 44,
+    "location": "Montreal Old Port",
+    "type": "loft",
+    "nightly_price": 165,
+    "features": ["exposed beams", "balcony", "artwork", "wine fridge"],
+    "tags": ["cultural", "artistic", "romantic", "creative", "historic"]
+  },
+  {
+    "property_id": 45,
+    "location": "Whistler Creekside",
+    "type": "cottage",
+    "nightly_price": 245,
+    "features": ["indoor pool", "fire pit", "sauna", "game room"],
+    "tags": ["adventure", "family-friendly", "pet-friendly", "relaxing", "cozy"]
+  },
+  {
+    "property_id": 46,
+    "location": "Victoria Inner Harbour",
+    "type": "apartment",
+    "nightly_price": 155,
+    "features": ["garden view", "workspace nook", "terrace", "espresso machine"],
+    "tags": ["romantic", "bright", "urban", "cozy", "eco-conscious"]
+  },
+  {
+    "property_id": 47,
+    "location": "Mont Tremblant",
+    "type": "chalet",
+    "nightly_price": 210,
+    "features": ["fireplace", "hot tub", "ski locker", "panoramic windows"],
+    "tags": ["winter retreat", "adventure", "scenic", "cozy", "romantic"]
+  },
+  {
+    "property_id": 48,
+    "location": "Toronto Harbourfront",
+    "type": "penthouse",
+    "nightly_price": 320,
+    "features": ["waterfront view", "jacuzzi", "wine cellar", "smart home"],
+    "tags": ["luxury", "romantic", "urban", "modern", "relaxing"]
+  },
+  {
+    "property_id": 49,
+    "location": "Vancouver Downtown",
+    "type": "loft",
+    "nightly_price": 190,
+    "features": ["balcony", "rooftop access", "art wall", "workspace"],
+    "tags": ["urban", "creative", "energetic", "bright", "modern"]
+  },
+  {
+    "property_id": 50,
+    "location": "Whistler Village",
+    "type": "cottage",
+    "nightly_price": 250,
+    "features": ["canoe", "hot tub", "indoor pool", "fireplace", "sauna"],
+    "tags": ["adventure", "pet-friendly", "family-friendly", "luxury", "cozy"]
+  }
+]
+>>>>>>> 2e03c0b69eb6daf53b3a0e839d463c1b8a05c7e6

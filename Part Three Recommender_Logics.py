@@ -97,7 +97,11 @@ else:
         filtered_results.sort(key=lambda x: x[1])
 
         table_data = []
+<<<<<<< HEAD:recommender_logics.py
         for rank, (res, score) in enumerate(filtered_results, start=1):
+=======
+        for rank, (res,score) in enumerate(filtered_results, start=1):
+>>>>>>> 2e03c0b69eb6daf53b3a0e839d463c1b8a05c7e6:Part Three Recommender_Logics.py
             table_data.append([
                 res.metadata["property_id"],
                 res.metadata["location"],
@@ -116,4 +120,8 @@ else:
         # 打印搜索结果
         for res, score in filtered_results:
             print(f"* [SIM={score:.3f}] {res.page_content}")
+<<<<<<< HEAD:recommender_logics.py
         print()
+=======
+        print()
+>>>>>>> 2e03c0b69eb6daf53b3a0e839d463c1b8a05c7e6:Part Three Recommender_Logics.py
