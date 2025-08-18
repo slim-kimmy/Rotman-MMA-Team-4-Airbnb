@@ -1,6 +1,15 @@
 import json
 
 # 打开并读取 JSON 文件
+
+import os
+print(os.getcwd())
+with open("C:\Users\wkq02\OneDrive - University of Toronto\桌面\你该死了\Canadian_properties_50.json", "r", encoding="utf-8") as file:
+    properties = json.load(file)
+
+with open("Canadian_properties_50.json", "r", encoding="utf-8") as file:
+    properties = json.load(file)
+
 with open("Canadian_properties_50.json", "r", encoding="utf-8") as file:
     properties = json.load(file)
 
@@ -95,25 +104,66 @@ else:
         filtered_results = [(res, score) for res, score in initial_results if filter_properties_by_user(res, current_user)]
         filtered_results = filtered_results[:10] # Display top 10 results
         filtered_results.sort(key=lambda x: x[1])
-
-        table_data = []
-        for rank, (res, score) in enumerate(filtered_results, start=1):
-            table_data.append([
-                res.metadata["property_id"],
-                res.metadata["location"],
-                res.metadata.get("type", ""),  # 确保 type 存在
-                res.metadata["nightly_price"],
-                ", ".join(res.metadata.get("features", [])),
-                ", ".join(res.metadata.get("tags", [])),
-                rank
-            ])
-        # 打印表格
-        print(tabulate(
-            table_data,
-            headers=["ID", "Location", "Type", "Price", "Features", "Tags", "Recommendation"],
-            tablefmt="grid"
-        ))
         # 打印搜索结果
         for res, score in filtered_results:
             print(f"* [SIM={score:.3f}] {res.page_content}")
         print()
+
+
+
+import requests, getpass
+
+OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions"
+MODEL = "deepseek/deepseek-chat"  # try alternatives if needed
+
+# Safely input your key (won't echo in Colab)
+API_KEY = getpass.getpass("Enter your OpenRouter API key (input is hidden): ").strip()
+HEADERS = {"Authorization": f"Bearer {API_KEY}", "Content-Type": "application/json"}
+
+SYSTEM_PROMPT = (
+    "You are a helpful assistant for an Airbnb-like vacation property search. "
+    "Given PROPERTIES (JSON) and a USER REQUEST, return JSON with keys: "
+    "'tags' (list[str]) and optionally 'property_ids' (list[int]). Return ONLY valid JSON."
+)
+
+def llm_search(properties, user_prompt, model, temperature):
+    payload = {
+        "model": model,
+        "messages": [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {
+                "role": "user",
+                "content": (
+                    "PROPERTIES:\n" + json.dumps(properties) +
+                    "\n\nUSER REQUEST:\n" + user_prompt +
+                    "\n\nRespond ONLY with JSON: {\"tags\": [...], \"property_ids\": [...]}"
+                ),
+            },
+        ],
+        "temperature": temperature,
+    }
+    r = requests.post(OPENROUTER_URL, headers=HEADERS, json=payload, timeout=60)
+    if r.status_code != 200:
+        return {"error": f"HTTP {r.status_code}", "details": r.text}
+    data = r.json()
+    content = (data.get("choices") or [{}])[0].get("message", {}).get("content")
+    if not content:
+        return {"error": "Empty response", "raw": data}
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError:
+        # Fallback: try to extract JSON substring
+        s, e = content.find("{"), content.rfind("}")
+        if s != -1 and e != -1 and e > s:
+            try:
+                return json.loads(content[s:e+1])
+            except json.JSONDecodeError:
+                return {"error": "Non-JSON content", "raw": content}
+        return {"error": "Non-JSON content", "raw": content}
+
+# Example single-turn usage (optional quick test)
+example_request = "Cozy place by the lake with a fireplace under $220"
+subset = properties[:12]  # send fewer for cheaper tokens
+print("Querying model... (uses your API key)")
+resp = llm_search(subset, example_request, model = MODEL, temperature=0.7)
+print(resp)
