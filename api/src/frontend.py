@@ -1,5 +1,7 @@
 import streamlit as st
-
+import sys
+sys.path.append("..")
+from utils import db_utils as db
 
 if "auth_user" not in st.session_state:
     st.session_state.auth_user = None
@@ -22,8 +24,13 @@ if st.session_state.auth_user is None:
 
         if st.button("Create account"):
             try:
-                db_utils.insert_user(username, password, name, int(group_size),
+                db.insert_user(username, password, name, int(group_size),
                                      preferred_env, float(min_price), float(max_price))
+
+                st.success("Account created. Please login now.")
+                st.balloons()
+                st.session_state.auth_user = username
+                print(st.session_state.auth_user)
             except Exception as e:
                 st.error(f"Error: {e}")
 
@@ -32,8 +39,15 @@ if st.session_state.auth_user is None:
         log_user = st.text_input("Username", key="user_log")
         log_pass = st.text_input("Password", type="password", key="login_pass")
         if st.button("Login"):
-            if validate_login(log_user, log_pass):
-                st.session_state.auth_user = log_user
-                st.success(f"Logged in as {log_user}")
+            user_info = dict(db.view_user(log_user))
+            if user_info is not {}:
+                if log_pass == user_info['password']:
+                    st.session_state.auth_user = log_user
+                    st.success(f"Logged in as {log_user}")
+                    print(st.session_state.auth_user)
+                    st.balloons()
+                else:
+                    st.error("Wrong password.")
             else:
-                st.error("Invalid login")
+                st.error("User not exist. Please join first.")
+
