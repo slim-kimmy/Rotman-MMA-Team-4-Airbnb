@@ -1,0 +1,1004 @@
+[
+  {
+    "property_id": 900,
+    "location": "Victoria Gardens",
+    "type": "chalet",
+    "price_per_night": 198,
+    "capacity": 4,
+    "features": [
+      "pool",
+      "ski-in",
+      "pet-friendly"
+    ],
+    "tags": [
+      "historic",
+      "adventure",
+      "summer escape",
+      "nightlife",
+      "family-friendly"
+    ],
+    "description": "Built with comfort in mind. Whether for work or rest, it meets your needs."
+  },
+  {
+    "property_id": 901,
+    "location": "Banff Village",
+    "type": "loft",
+    "price_per_night": 119,
+    "capacity": 3,
+    "features": [
+      "sauna",
+      "balcony",
+      "parking",
+      "fireplace"
+    ],
+    "tags": [
+      "budget",
+      "luxury",
+      "nature",
+      "family-friendly"
+    ],
+    "description": "Calm spot with easy access to nature. Simple, serene, and special."
+  },
+  {
+    "property_id": 902,
+    "location": "Banff Village",
+    "type": "loft",
+    "price_per_night": 150,
+    "capacity": 3,
+    "features": [
+      "ski-in",
+      "pool",
+      "garden",
+      "fireplace",
+      "balcony"
+    ],
+    "tags": [
+      "historic",
+      "nightlife",
+      "secluded"
+    ],
+    "description": "Escape the noise. With simple decor and calm, this place helps you disconnect."
+  },
+  {
+    "property_id": 903,
+    "location": "Quebec City",
+    "type": "loft",
+    "price_per_night": 122,
+    "capacity": 2,
+    "features": [
+      "balcony",
+      "pool",
+      "parking",
+      "pet-friendly"
+    ],
+    "tags": [
+      "luxury",
+      "historic",
+      "romantic",
+      "nightlife",
+      "secluded"
+    ],
+    "description": "Stillness you cannot get in the city. Ideal for a real break."
+  },
+  {
+    "property_id": 904,
+    "location": "Quebec City",
+    "type": "chalet",
+    "price_per_night": 145,
+    "capacity": 4,
+    "features": [
+      "washer",
+      "fireplace",
+      "wifi",
+      "sauna"
+    ],
+    "tags": [
+      "historic",
+      "secluded",
+      "nature",
+      "nightlife",
+      "budget"
+    ],
+    "description": "Rustic charm meets modern ease."
+  },
+  {
+    "property_id": 905,
+    "location": "Victoria Gardens",
+    "type": "chalet",
+    "price_per_night": 178,
+    "capacity": 2,
+    "features": [
+      "pool",
+      "ski-in",
+      "fireplace",
+      "balcony"
+    ],
+    "tags": [
+      "historic",
+      "budget",
+      "family-friendly",
+      "luxury"
+    ],
+    "description": "Peace and simplicity. Just right for those who value comfort."
+  },
+  {
+    "property_id": 906,
+    "location": "Ottawa Riverside",
+    "type": "loft",
+    "price_per_night": 143,
+    "capacity": 5,
+    "features": [
+      "garden",
+      "balcony",
+      "ski-in",
+      "fireplace",
+      "parking"
+    ],
+    "tags": [
+      "nightlife",
+      "summer escape",
+      "secluded",
+      "family-friendly"
+    ],
+    "description": "A place where memories are made. It is practical and just quirky enough."
+  },
+  {
+    "property_id": 907,
+    "location": "Victoria Gardens",
+    "type": "chalet",
+    "price_per_night": 202,
+    "capacity": 3,
+    "features": [
+      "pool",
+      "balcony",
+      "ski-in",
+      "sauna",
+      "wifi"
+    ],
+    "tags": [
+      "secluded",
+      "luxury",
+      "nature",
+      "summer escape"
+    ],
+    "description": "You will sleep well, eat well, and feel well here."
+  },
+  {
+    "property_id": 908,
+    "location": "Banff Village",
+    "type": "apartment",
+    "price_per_night": 133,
+    "capacity": 3,
+    "features": [
+      "wifi",
+      "pool",
+      "washer"
+    ],
+    "tags": [
+      "historic",
+      "family-friendly",
+      "nightlife",
+      "summer escape"
+    ],
+    "description": "Enjoy nature and still be close to restaurants and shops."
+  },
+  {
+    "property_id": 909,
+    "location": "Montreal Old Town",
+    "type": "bungalow",
+    "price_per_night": 132,
+    "capacity": 3,
+    "features": [
+      "washer",
+      "ski-in",
+      "parking"
+    ],
+    "tags": [
+      "luxury",
+      "romantic",
+      "summer escape",
+      "secluded",
+      "nature"
+    ],
+    "description": "Bright and well-kept. Practical and peaceful."
+  },
+  {
+    "property_id": 910,
+    "location": "Toronto Downtown",
+    "type": "chalet",
+    "price_per_night": 140,
+    "capacity": 4,
+    "features": [
+      "wifi",
+      "fireplace",
+      "pet-friendly"
+    ],
+    "tags": [
+      "nature",
+      "family-friendly",
+      "nightlife",
+      "romantic"
+    ],
+    "description": "All the basics here, plus a few pleasant surprises."
+  },
+  {
+    "property_id": 911,
+    "location": "Ottawa Riverside",
+    "type": "cabin",
+    "price_per_night": 150,
+    "capacity": 6,
+    "features": [
+      "garden",
+      "ski-in",
+      "fireplace",
+      "sauna",
+      "pet-friendly"
+    ],
+    "tags": [
+      "summer escape",
+      "nightlife",
+      "luxury"
+    ],
+    "description": "Expect colorful sunsets and quiet mornings."
+  },
+  {
+    "property_id": 912,
+    "location": "Halifax Harbour",
+    "type": "apartment",
+    "price_per_night": 157,
+    "capacity": 2,
+    "features": [
+      "balcony",
+      "pet-friendly",
+      "washer",
+      "garden",
+      "fireplace"
+    ],
+    "tags": [
+      "luxury",
+      "historic",
+      "adventure"
+    ],
+    "description": "This is a home for slow mornings and relaxed evenings."
+  },
+  {
+    "property_id": 913,
+    "location": "Quebec City",
+    "type": "villa",
+    "price_per_night": 265,
+    "capacity": 5,
+    "features": [
+      "pool",
+      "balcony",
+      "sauna",
+      "fireplace"
+    ],
+    "tags": [
+      "luxury",
+      "nature",
+      "summer escape",
+      "adventure",
+      "family-friendly"
+    ],
+    "description": "Built for comfort. Sleep well, eat well, and relax."
+  },
+  {
+    "property_id": 914,
+    "location": "Vancouver Waterfront",
+    "type": "chalet",
+    "price_per_night": 162,
+    "capacity": 5,
+    "features": [
+      "garden",
+      "fireplace",
+      "parking",
+      "pet-friendly"
+    ],
+    "tags": [
+      "adventure",
+      "nature",
+      "family-friendly",
+      "summer escape",
+      "budget"
+    ],
+    "description": "We have taken care of the details so you can relax."
+  },
+  {
+    "property_id": 915,
+    "location": "Niagara Falls",
+    "type": "chalet",
+    "price_per_night": 201,
+    "capacity": 4,
+    "features": [
+      "washer",
+      "pet-friendly",
+      "sauna"
+    ],
+    "tags": [
+      "nature",
+      "secluded",
+      "historic"
+    ],
+    "description": "Tucked away in a peaceful area, this property offers privacy without isolation. Many guests return year after year."
+  },
+  {
+    "property_id": 916,
+    "location": "Niagara Falls",
+    "type": "apartment",
+    "price_per_night": 119,
+    "capacity": 4,
+    "features": [
+      "sauna",
+      "garden",
+      "parking"
+    ],
+    "tags": [
+      "nature",
+      "romantic",
+      "adventure"
+    ],
+    "description": "Thoughtful design and natural surroundings. Come see why guests come back."
+  },
+  {
+    "property_id": 917,
+    "location": "Niagara Falls",
+    "type": "villa",
+    "price_per_night": 218,
+    "capacity": 7,
+    "features": [
+      "pet-friendly",
+      "ski-in",
+      "washer",
+      "fireplace"
+    ],
+    "tags": [
+      "family-friendly",
+      "historic",
+      "nature",
+      "budget",
+      "nightlife"
+    ],
+    "description": "Just enough space and quiet. Get back to what matters most."
+  },
+  {
+    "property_id": 918,
+    "location": "Montreal Old Town",
+    "type": "cabin",
+    "price_per_night": 192,
+    "capacity": 3,
+    "features": [
+      "wifi",
+      "balcony",
+      "pool",
+      "washer",
+      "fireplace"
+    ],
+    "tags": [
+      "secluded",
+      "summer escape",
+      "family-friendly"
+    ],
+    "description": "Welcome to our cozy retreat. After a long day of exploring, sink into soft sheets and let the quiet of nature lull you to sleep."
+  },
+  {
+    "property_id": 919,
+    "location": "Toronto Downtown",
+    "type": "chalet",
+    "price_per_night": 152,
+    "capacity": 2,
+    "features": [
+      "balcony",
+      "wifi",
+      "garden",
+      "fireplace",
+      "pet-friendly"
+    ],
+    "tags": [
+      "adventure",
+      "luxury",
+      "romantic",
+      "secluded"
+    ],
+    "description": "Make yourself at home. It's full of warmth and comfort."
+  },
+  {
+    "property_id": 920,
+    "location": "Quebec City",
+    "type": "bungalow",
+    "price_per_night": 114,
+    "capacity": 3,
+    "features": [
+      "wifi",
+      "pool",
+      "sauna",
+      "parking"
+    ],
+    "tags": [
+      "budget",
+      "adventure",
+      "family-friendly"
+    ],
+    "description": "Clean, quiet, and comfortably furnished."
+  },
+  {
+    "property_id": 921,
+    "location": "Halifax Harbour",
+    "type": "condo",
+    "price_per_night": 171,
+    "capacity": 2,
+    "features": [
+      "pet-friendly",
+      "fireplace",
+      "balcony",
+      "washer"
+    ],
+    "tags": [
+      "romantic",
+      "summer escape",
+      "secluded",
+      "budget",
+      "historic"
+    ],
+    "description": "Designed to help you slow down. Take your time here."
+  },
+  {
+    "property_id": 922,
+    "location": "Niagara Falls",
+    "type": "chalet",
+    "price_per_night": 205,
+    "capacity": 3,
+    "features": [
+      "parking",
+      "balcony",
+      "sauna"
+    ],
+    "tags": [
+      "historic",
+      "secluded",
+      "luxury",
+      "family-friendly",
+      "adventure"
+    ],
+    "description": "A spot to light a candle, make tea, and stay in."
+  },
+  {
+    "property_id": 923,
+    "location": "Vancouver Waterfront",
+    "type": "chalet",
+    "price_per_night": 179,
+    "capacity": 6,
+    "features": [
+      "washer",
+      "ski-in",
+      "parking"
+    ],
+    "tags": [
+      "budget",
+      "secluded",
+      "adventure"
+    ],
+    "description": "Light streams in through large windows. It is perfect for rest or reading."
+  },
+  {
+    "property_id": 924,
+    "location": "Toronto Downtown",
+    "type": "bungalow",
+    "price_per_night": 109,
+    "capacity": 2,
+    "features": [
+      "wifi",
+      "washer",
+      "pool",
+      "garden"
+    ],
+    "tags": [
+      "nightlife",
+      "romantic",
+      "luxury",
+      "adventure"
+    ],
+    "description": "You will be welcomed by soft lighting and fresh linen."
+  },
+  {
+    "property_id": 925,
+    "location": "Ottawa Riverside",
+    "type": "condo",
+    "price_per_night": 120,
+    "capacity": 3,
+    "features": [
+      "ski-in",
+      "washer",
+      "sauna",
+      "fireplace"
+    ],
+    "tags": [
+      "summer escape",
+      "adventure",
+      "romantic",
+      "luxury"
+    ],
+    "description": "You are close to everything, yet far enough for peace and quiet."
+  },
+  {
+    "property_id": 926,
+    "location": "Vancouver Waterfront",
+    "type": "chalet",
+    "price_per_night": 141,
+    "capacity": 6,
+    "features": [
+      "parking",
+      "wifi",
+      "balcony",
+      "fireplace",
+      "garden"
+    ],
+    "tags": [
+      "nature",
+      "summer escape",
+      "family-friendly",
+      "secluded",
+      "adventure"
+    ],
+    "description": "Perfect for a short or long escape. Cozy without being cramped."
+  },
+  {
+    "property_id": 927,
+    "location": "Halifax Harbour",
+    "type": "loft",
+    "price_per_night": 155,
+    "capacity": 4,
+    "features": [
+      "balcony",
+      "parking",
+      "pet-friendly"
+    ],
+    "tags": [
+      "luxury",
+      "nature",
+      "summer escape",
+      "budget",
+      "secluded"
+    ],
+    "description": "Not just a place to sleep. Guests leave rested and inspired."
+  },
+  {
+    "property_id": 928,
+    "location": "Halifax Harbour",
+    "type": "loft",
+    "price_per_night": 126,
+    "capacity": 2,
+    "features": [
+      "pool",
+      "balcony",
+      "pet-friendly"
+    ],
+    "tags": [
+      "summer escape",
+      "romantic",
+      "luxury",
+      "nightlife"
+    ],
+    "description": "Our cabin has a unique charm that guests often fall in love with. It is peaceful and filled with thoughtful details."
+  },
+  {
+    "property_id": 929,
+    "location": "Quebec City",
+    "type": "villa",
+    "price_per_night": 219,
+    "capacity": 4,
+    "features": [
+      "pool",
+      "sauna",
+      "pet-friendly",
+      "parking"
+    ],
+    "tags": [
+      "nature",
+      "historic",
+      "romantic"
+    ],
+    "description": "From the cozy bed to the sunny balcony, every part invites relaxation."
+  },
+  {
+    "property_id": 930,
+    "location": "Montreal Old Town",
+    "type": "chalet",
+    "price_per_night": 184,
+    "capacity": 3,
+    "features": [
+      "garden",
+      "wifi",
+      "pet-friendly",
+      "washer",
+      "fireplace"
+    ],
+    "tags": [
+      "luxury",
+      "nature",
+      "nightlife"
+    ],
+    "description": "We cleaned it, we stocked it, and now it is yours to enjoy."
+  },
+  {
+    "property_id": 931,
+    "location": "Montreal Old Town",
+    "type": "townhouse",
+    "price_per_night": 179,
+    "capacity": 4,
+    "features": [
+      "fireplace",
+      "garden",
+      "pet-friendly",
+      "ski-in"
+    ],
+    "tags": [
+      "secluded",
+      "budget",
+      "luxury",
+      "nature",
+      "romantic"
+    ],
+    "description": "It is honest and comfortable. Everything you need is right here."
+  },
+  {
+    "property_id": 932,
+    "location": "Vancouver Waterfront",
+    "type": "apartment",
+    "price_per_night": 117,
+    "capacity": 2,
+    "features": [
+      "fireplace",
+      "washer",
+      "sauna"
+    ],
+    "tags": [
+      "luxury",
+      "historic",
+      "adventure",
+      "romantic"
+    ],
+    "description": "Sit on the porch, breathe the fresh air, and maybe forget what day it is."
+  },
+  {
+    "property_id": 933,
+    "location": "Vancouver Waterfront",
+    "type": "townhouse",
+    "price_per_night": 185,
+    "capacity": 5,
+    "features": [
+      "wifi",
+      "parking",
+      "garden",
+      "ski-in",
+      "sauna"
+    ],
+    "tags": [
+      "budget",
+      "romantic",
+      "summer escape"
+    ],
+    "description": "Every inch is thoughtfully prepared. Relax, recharge, and enjoy your stay."
+  },
+  {
+    "property_id": 934,
+    "location": "Niagara Falls",
+    "type": "loft",
+    "price_per_night": 173,
+    "capacity": 2,
+    "features": [
+      "wifi",
+      "pool",
+      "ski-in",
+      "sauna",
+      "washer"
+    ],
+    "tags": [
+      "historic",
+      "summer escape",
+      "nature",
+      "secluded"
+    ],
+    "description": "One of the friendliest spots around. Guests feel at home."
+  },
+  {
+    "property_id": 935,
+    "location": "Banff Village",
+    "type": "cabin",
+    "price_per_night": 161,
+    "capacity": 2,
+    "features": [
+      "pool",
+      "ski-in",
+      "washer",
+      "fireplace",
+      "sauna"
+    ],
+    "tags": [
+      "historic",
+      "family-friendly",
+      "nightlife",
+      "nature",
+      "romantic"
+    ],
+    "description": "Calm nights and the feeling of being truly away."
+  },
+  {
+    "property_id": 936,
+    "location": "Montreal Old Town",
+    "type": "apartment",
+    "price_per_night": 131,
+    "capacity": 5,
+    "features": [
+      "pet-friendly",
+      "parking",
+      "balcony"
+    ],
+    "tags": [
+      "historic",
+      "nature",
+      "nightlife",
+      "adventure",
+      "budget"
+    ],
+    "description": "Simple: good beds, clean kitchen, and room to breathe."
+  },
+  {
+    "property_id": 937,
+    "location": "Halifax Harbour",
+    "type": "apartment",
+    "price_per_night": 175,
+    "capacity": 5,
+    "features": [
+      "parking",
+      "fireplace",
+      "washer",
+      "pet-friendly",
+      "pool"
+    ],
+    "tags": [
+      "romantic",
+      "nature",
+      "historic",
+      "summer escape",
+      "luxury"
+    ],
+    "description": "Close to everything, made simple on purpose."
+  },
+  {
+    "property_id": 938,
+    "location": "Ottawa Riverside",
+    "type": "villa",
+    "price_per_night": 233,
+    "capacity": 8,
+    "features": [
+      "ski-in",
+      "sauna",
+      "parking",
+      "pool",
+      "garden"
+    ],
+    "tags": [
+      "luxury",
+      "nature",
+      "budget",
+      "romantic",
+      "nightlife"
+    ],
+    "description": "This space is refreshingly simple and incredibly calming. Guests often say they sleep better here than anywhere else."
+  },
+  {
+    "property_id": 939,
+    "location": "Whistler Mountain",
+    "type": "chalet",
+    "price_per_night": 159,
+    "capacity": 2,
+    "features": [
+      "fireplace",
+      "washer",
+      "ski-in",
+      "pool",
+      "pet-friendly"
+    ],
+    "tags": [
+      "romantic",
+      "budget",
+      "summer escape",
+      "historic"
+    ],
+    "description": "Clean rooms, fresh sheets, and plenty of coffee."
+  },
+  {
+    "property_id": 940,
+    "location": "Vancouver Waterfront",
+    "type": "cabin",
+    "price_per_night": 219,
+    "capacity": 5,
+    "features": [
+      "balcony",
+      "wifi",
+      "fireplace"
+    ],
+    "tags": [
+      "romantic",
+      "family-friendly",
+      "nature",
+      "nightlife",
+      "summer escape"
+    ],
+    "description": "Lovely view, quiet neighbors, and soft sheets."
+  },
+  {
+    "property_id": 941,
+    "location": "Halifax Harbour",
+    "type": "cabin",
+    "price_per_night": 227,
+    "capacity": 4,
+    "features": [
+      "sauna",
+      "balcony",
+      "pet-friendly",
+      "pool",
+      "washer"
+    ],
+    "tags": [
+      "nature",
+      "summer escape",
+      "budget",
+      "secluded",
+      "family-friendly"
+    ],
+    "description": "A mix of old wood and modern comforts. Add your story to it."
+  },
+  {
+    "property_id": 942,
+    "location": "Ottawa Riverside",
+    "type": "villa",
+    "price_per_night": 218,
+    "capacity": 7,
+    "features": [
+      "pet-friendly",
+      "sauna",
+      "ski-in",
+      "washer"
+    ],
+    "tags": [
+      "secluded",
+      "adventure",
+      "nature"
+    ],
+    "description": "This is not a hotel. We keep things clean, comfortable, and welcoming."
+  },
+  {
+    "property_id": 943,
+    "location": "Victoria Gardens",
+    "type": "townhouse",
+    "price_per_night": 207,
+    "capacity": 4,
+    "features": [
+      "washer",
+      "parking",
+      "ski-in"
+    ],
+    "tags": [
+      "nightlife",
+      "historic",
+      "nature",
+      "adventure"
+    ],
+    "description": "Peaceful, filled with natural light. Great for creative minds."
+  },
+  {
+    "property_id": 944,
+    "location": "Ottawa Riverside",
+    "type": "loft",
+    "price_per_night": 148,
+    "capacity": 3,
+    "features": [
+      "garden",
+      "ski-in",
+      "balcony",
+      "sauna"
+    ],
+    "tags": [
+      "secluded",
+      "historic",
+      "summer escape"
+    ],
+    "description": "We are proud of this home. It is easy to feel good here."
+  },
+  {
+    "property_id": 945,
+    "location": "Halifax Harbour",
+    "type": "cabin",
+    "price_per_night": 164,
+    "capacity": 6,
+    "features": [
+      "garden",
+      "pet-friendly",
+      "ski-in"
+    ],
+    "tags": [
+      "romantic",
+      "historic",
+      "nature",
+      "summer escape",
+      "luxury"
+    ],
+    "description": "A hidden gem just far enough from the noise."
+  },
+  {
+    "property_id": 946,
+    "location": "Quebec City",
+    "type": "condo",
+    "price_per_night": 156,
+    "capacity": 2,
+    "features": [
+      "pet-friendly",
+      "ski-in",
+      "sauna",
+      "washer"
+    ],
+    "tags": [
+      "secluded",
+      "nature",
+      "adventure"
+    ],
+    "description": "Everything you need for a quiet escape. Sofa that invites naps."
+  },
+  {
+    "property_id": 947,
+    "location": "Vancouver Waterfront",
+    "type": "villa",
+    "price_per_night": 240,
+    "capacity": 8,
+    "features": [
+      "pet-friendly",
+      "balcony",
+      "ski-in"
+    ],
+    "tags": [
+      "nightlife",
+      "secluded",
+      "summer escape",
+      "luxury"
+    ],
+    "description": "Clean lines, warm lighting, and soft linens make this space ideal for rest."
+  },
+  {
+    "property_id": 948,
+    "location": "Victoria Gardens",
+    "type": "cabin",
+    "price_per_night": 192,
+    "capacity": 3,
+    "features": [
+      "garden",
+      "ski-in",
+      "sauna"
+    ],
+    "tags": [
+      "nightlife",
+      "budget",
+      "romantic",
+      "luxury"
+    ],
+    "description": "Calm, casual, and filled with charm."
+  },
+  {
+    "property_id": 949,
+    "location": "Halifax Harbour",
+    "type": "townhouse",
+    "price_per_night": 185,
+    "capacity": 6,
+    "features": [
+      "sauna",
+      "pool",
+      "wifi"
+    ],
+    "tags": [
+      "adventure",
+      "nightlife",
+      "summer escape"
+    ],
+    "description": "Our home is small but full of heart."
+  }
+]
