@@ -4,7 +4,7 @@ url = "https://api.groq.com/openai/v1/chat/completions"
 
 headers = {
     "Content-Type": "application/json",
-    "Authorization": "Bearer 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"
+    "Authorization": ""
 }
 
 data = {
