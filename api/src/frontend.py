@@ -12,6 +12,8 @@ if "auth_user" not in st.session_state:
     st.session_state.auth_user = None
 if "edit_mode" not in st.session_state:
     st.session_state.edit_mode = False
+if "saved_properties" not in st.session_state:
+    st.session_state.saved_properties = []
 
 def show_user_sidebar():
     """Render the sidebar only for logged-in users."""
@@ -156,10 +158,11 @@ else:
         if not results:
             st.info("No matches found.")
         else:
-            df = pd.DataFrame(results)
+            result_df = pd.DataFrame(results)
             key_cols = ["property_id", "location", "type", "price_per_night", "capacity"]
-            cols_to_show = [c for c in key_cols if c in df.columns]
-            st.dataframe(df[cols_to_show] if cols_to_show else df, use_container_width=True)
+            cols_to_show = [c for c in key_cols if c in result_df.columns]
+            st.dataframe(result_df[cols_to_show] if cols_to_show else result_df, use_container_width=True)
+
 
             st.subheader("Details")
             for r in results:
@@ -174,3 +177,6 @@ else:
                     st.write(f"Type: {r.get('type', '')}")
                     if "capacity" in r:
                         st.write(f"Capacity: {r['capacity']}")
+
+
+
