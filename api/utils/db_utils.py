@@ -64,3 +64,14 @@ def view_user(username):
     conn.close()
     # Have to cast this to a dict 
     return user
+
+def delete_user(username):
+    conn = get_db_connection()
+    cursor = conn.cursor()
+    cursor.execute('''
+        DELETE FROM users WHERE username = ?
+    ''', (username,))
+    conn.commit()
+    conn.close()
+
+create_users_table()
