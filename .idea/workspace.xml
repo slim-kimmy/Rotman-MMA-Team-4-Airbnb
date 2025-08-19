@@ -8,6 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/data/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/data/users.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/frontend.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/utils/similarity_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/utils/similarity_utils.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
