@@ -5,6 +5,93 @@ from utils import db_utils as db
 
 if "auth_user" not in st.session_state:
     st.session_state.auth_user = None
+if "edit_mode" not in st.session_state:
+    st.session_state.edit_mode = False
+
+def show_user_sidebar():
+    """Render the sidebar only for logged-in users."""
+    if st.session_state.auth_user is None:
+        return
+
+    user = dict(db.view_user(st.session_state.auth_user))
+    if not user:
+        st.session_state.auth_user = None
+        return
+
+    with st.sidebar:
+        st.header("My Account")
+
+        # Read-only card
+        if not st.session_state.edit_mode:
+            with st.expander("Profile", expanded=True):
+                st.write(f"**Name:** {user['name']}")
+                st.write(f"**Group size:** {user['group_size']}")
+                st.write(f"**Preferred environment:** {user['preferred_env']}")
+                st.write(f"**Budget:** {user['min_price']} to {user['max_price']}")
+                st.caption(f"User ID: {user['user_id']}  |  Username: {user['username']}")
+
+            c1, c2 = st.columns(2)
+            with c1:
+                if st.button("Edit", use_container_width=True):
+                    st.session_state.edit_mode = True
+                    st.rerun()
+            with c2:
+                if st.button("Logout", use_container_width=True):
+                    st.session_state.auth_user = None
+                    st.session_state.edit_mode = False
+                    st.rerun()
+
+            st.divider()
+            st.caption("Tip: Use the main area to query and see recommendations.")
+
+        # Edit mode
+        else:
+            st.subheader("Edit profile")
+            with st.form("edit_form_sidebar"):
+                e_name = st.text_input("Full name", value=user["name"])
+                e_group = st.number_input("Group size", min_value=1, step=1, value=int(user["group_size"]))
+                e_env = st.text_input("Preferred environment", value=user.get("preferred_env", ""))
+                e_min = st.number_input("Min nightly price", min_value=0.0, value=float(user["min_price"]), step=10.0)
+                e_max = st.number_input("Max nightly price", min_value=0.0, value=float(user["max_price"]), step=10.0)
+
+                save = st.form_submit_button("Save changes", use_container_width=True)
+
+            c1, c2 = st.columns(2)
+            if save:
+                if e_min > e_max:
+                    st.error("Min price cannot be greater than max price")
+                else:
+                    try:
+                        db.edit_user(
+                            username=user["username"],
+                            name=e_name,
+                            group_size=int(e_group),
+                            preferred_env=e_env,
+                            min_price=float(e_min),
+                            max_price=float(e_max),
+                        )
+                        st.success("Profile updated")
+                        st.session_state.edit_mode = False
+                        st.rerun()
+                    except Exception as ex:
+                        st.error(f"Update failed: {ex}")
+
+            with c1:
+                if st.button("Cancel", use_container_width=True):
+                    st.session_state.edit_mode = False
+                    st.rerun()
+            with c2:
+                if st.button("Delete account", use_container_width=True):
+                    # Inline delete using a quick SQL call
+                    conn = db.get_db_connection()
+                    cur = conn.cursor()
+                    cur.execute("DELETE FROM users WHERE username = ?", (user["username"],))
+                    conn.commit()
+                    conn.close()
+                    st.success("Account deleted")
+                    st.session_state.auth_user = None
+                    st.session_state.edit_mode = False
+                    st.rerun()
 
 st.title("Summer Home Recommender")
 
@@ -30,7 +117,7 @@ if st.session_state.auth_user is None:
                 st.success("Account created. Please login now.")
                 st.balloons()
                 st.session_state.auth_user = username
-                print(st.session_state.auth_user)
+                st.rerun()
             except Exception as e:
                 st.error(f"Error: {e}")
 
@@ -40,14 +127,21 @@ if st.session_state.auth_user is None:
         log_pass = st.text_input("Password", type="password", key="login_pass")
         if st.button("Login"):
             user_info = dict(db.view_user(log_user))
-            if user_info is not {}:
+            if user_info:
                 if log_pass == user_info['password']:
                     st.session_state.auth_user = log_user
                     st.success(f"Logged in as {log_user}")
-                    print(st.session_state.auth_user)
                     st.balloons()
+                    st.rerun()
                 else:
                     st.error("Wrong password.")
             else:
                 st.error("User not exist. Please join first.")
+
+else:
+    # Show sidebar for logged-in users
+    show_user_sidebar()
+
+    # Main area content after login
+    st.container()
 
