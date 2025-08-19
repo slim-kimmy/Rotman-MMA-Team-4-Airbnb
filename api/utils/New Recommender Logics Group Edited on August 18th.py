@@ -99,11 +99,7 @@ else:
         filtered_results.sort(key=lambda x: x[1])
 
         table_data = []
-<<<<<<< HEAD:recommender_logics.py
         for rank, (res, score) in enumerate(filtered_results, start=1):
-=======
-        for rank, (res,score) in enumerate(filtered_results, start=1):
->>>>>>> 2e03c0b69eb6daf53b3a0e839d463c1b8a05c7e6:Part Three Recommender_Logics.py
             table_data.append([
                 res.metadata["property_id"],
                 res.metadata["location"],

@@ -87,11 +87,7 @@ def show_user_sidebar():
                     st.rerun()
             with c2:
                 if st.button("Delete account", use_container_width=True):
-                    conn = db.get_db_connection()
-                    cur = conn.cursor()
-                    cur.execute("DELETE FROM users WHERE username = ?", (user["username"],))
-                    conn.commit()
-                    conn.close()
+                    db.delete_user(user["username"])
                     st.success("Account deleted")
                     st.session_state.auth_user = None
                     st.session_state.edit_mode = False
