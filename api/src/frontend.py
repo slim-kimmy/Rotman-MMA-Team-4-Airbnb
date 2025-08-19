@@ -175,8 +175,8 @@ else:
                     if r.get("features"):
                         st.write("Features: " + ", ".join(map(str, r["features"])))
                     st.write(f"Type: {r.get('type', '')}")
-                    if "capacity" in r:
-                        st.write(f"Capacity: {r['capacity']}")
+                    #if "capacity" in r:
+                        #st.write(f"Capacity: {r['capacity']}")
 
 
 
