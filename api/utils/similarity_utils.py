@@ -62,7 +62,7 @@ def similarity_search(preferened_environment,query_text,max_price, min_price):
     filtered_results = filtered_results[:10]  # Display top 10 results
 
     for res, score in filtered_results:
-        print(f"* [SIM={score:.3f}] {res.page_content}")
+        print(f"* {res.page_content} \n {res.metadata}")
         print()
     pass
 
