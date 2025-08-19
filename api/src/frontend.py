@@ -4,6 +4,7 @@ sys.path.append("..")
 import pandas as pd
 import numpy as np
 import importlib
+from streamlit_card import card
 from utils import db_utils as db
 from utils import similarity_utils as sim
 importlib.reload(sim)
@@ -134,8 +135,8 @@ if st.session_state.auth_user is None:
             if user_info:
                 if log_pass == user_info['password']:
                     st.session_state.auth_user = log_user
-                    st.success(f"Logged in as {log_user}")
                     st.balloons()
+                    st.success(f"Logged in as {log_user}")
                     st.rerun()
                 else:
                     st.error("Wrong password.")
@@ -158,16 +159,65 @@ else:
         if not results:
             st.info("No matches found.")
         else:
-            result_df = pd.DataFrame(results)
-            key_cols = ["property_id", "location", "type", "price_per_night", "capacity"]
-            cols_to_show = [c for c in key_cols if c in result_df.columns]
-            st.dataframe(result_df[cols_to_show] if cols_to_show else result_df, use_container_width=True)
+            # container_styles = {
+            #     "display": "grid",
+            #     "grid-template-columns": "repeat(2, 1fr)",  # 2 cards per row
+            #     "gap": "5px",  # spacing between cards
+            #     "justify-items": "center"
+            # }
+            # cards = []
+            # rank = 1
+            # for r in results:
+            #     cards.append(card(
+            #         title = f"Top {rank}",
+            #         text= r["description"],
+            #         styles={
+            #             "card": {
+            #                 "width": "500px",
+            #                 "height": "200px",
+            #                 "border-radius": "1px",
+            #                 "margin-bottom": "2px auto"
+            #             }}
+            #     ))
+            #     rank += 1
+            #
+            #
 
 
-            st.subheader("Details")
+            #
+            #     with st.container(border= True):
+            #         rank += 1
+            #         st.markdown(f" ### Top {rank}")
+            #         if r.get("description"):
+            #             st.write(r["description"])
+            #         if r.get("tags"):
+            #             st.write("Tags: " + ", ".join(map(str, r["tags"])))
+            #         if r.get("features"):
+            #             st.write("Features: " + ", ".join(map(str, r["features"])))
+            #         st.write(f"Type: {r.get('type', '')}")
+            #             #if "capacity" in r:
+            # st.write(f"Capacity: {r['capacity']}")
+            # card(title="Hello World!",
+            #      text="Some description",
+            #      image="http://placekitten.com/200/300",
+            #      url="https://github.com/gamcoh/st-card"
+            #      )
+
+            # index_list = ['Top 1', 'Top 2', 'Top 3', 'Top 4', 'Top 5', 'Top 6', 'Top 7', 'Top 8', 'Top 9', 'Top 10']
+            # result_df = pd.DataFrame(results, index= index_list)
+            # key_cols = ["property_id", "location", "type", "price_per_night", "capacity"]
+            # cols_to_show = [c for c in key_cols if c in result_df.columns]
+            # st.dataframe(result_df[cols_to_show] if cols_to_show else result_df, use_container_width=True)
+            #
+
+            #st.subheader("")
+
+            #
+            rank = 0
             for r in results:
-                title = f"#{r.get('property_id')} • {r.get('location')} • ${r.get('price_per_night')}/night"
-                with st.expander(title, expanded=False):
+                with st.container(border= True):
+                    rank += 1
+                    st.markdown(f" ### Top {rank}")
                     if r.get("description"):
                         st.write(r["description"])
                     if r.get("tags"):
@@ -175,8 +225,9 @@ else:
                     if r.get("features"):
                         st.write("Features: " + ", ".join(map(str, r["features"])))
                     st.write(f"Type: {r.get('type', '')}")
-                    #if "capacity" in r:
-                        #st.write(f"Capacity: {r['capacity']}")
+                        #if "capacity" in r:
+                    #st.write(f"Capacity: {r['capacity']}")
+
 
 
 
