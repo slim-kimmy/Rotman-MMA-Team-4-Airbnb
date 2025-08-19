@@ -1,7 +1,12 @@
 import streamlit as st
 import sys
 sys.path.append("..")
+import pandas as pd
+import numpy as np
+import importlib
 from utils import db_utils as db
+from utils import similarity_utils as sim
+importlib.reload(sim)
 
 if "auth_user" not in st.session_state:
     st.session_state.auth_user = None
@@ -21,14 +26,14 @@ def show_user_sidebar():
     with st.sidebar:
         st.header("My Account")
 
-        # Read-only card
         if not st.session_state.edit_mode:
             with st.expander("Profile", expanded=True):
                 st.write(f"**Name:** {user['name']}")
+                st.write(f"**User Name:** {user['username']}")
                 st.write(f"**Group size:** {user['group_size']}")
                 st.write(f"**Preferred environment:** {user['preferred_env']}")
                 st.write(f"**Budget:** {user['min_price']} to {user['max_price']}")
-                st.caption(f"User ID: {user['user_id']}  |  Username: {user['username']}")
+                st.caption(f"User ID: {user['user_id']} ")
 
             c1, c2 = st.columns(2)
             with c1:
@@ -42,9 +47,7 @@ def show_user_sidebar():
                     st.rerun()
 
             st.divider()
-            st.caption("Tip: Use the main area to query and see recommendations.")
 
-        # Edit mode
         else:
             st.subheader("Edit profile")
             with st.form("edit_form_sidebar"):
@@ -82,7 +85,6 @@ def show_user_sidebar():
                     st.rerun()
             with c2:
                 if st.button("Delete account", use_container_width=True):
-                    # Inline delete using a quick SQL call
                     conn = db.get_db_connection()
                     cur = conn.cursor()
                     cur.execute("DELETE FROM users WHERE username = ?", (user["username"],))
@@ -139,9 +141,36 @@ if st.session_state.auth_user is None:
                 st.error("User not exist. Please join first.")
 
 else:
-    # Show sidebar for logged-in users
     show_user_sidebar()
 
-    # Main area content after login
-    st.container()
+    query_text = st.text_input("Enter your search query:", icon=":material/search:")
+    user_info = dict(db.view_user(st.session_state.auth_user))
 
+    if st.button("Search"):
+        results = sim.similarity_search(
+            user_info["preferred_env"],
+            query_text,
+            user_info["max_price"],
+            user_info["min_price"]
+        )
+        if not results:
+            st.info("No matches found.")
+        else:
+            df = pd.DataFrame(results)
+            key_cols = ["property_id", "location", "type", "price_per_night", "capacity"]
+            cols_to_show = [c for c in key_cols if c in df.columns]
+            st.dataframe(df[cols_to_show] if cols_to_show else df, use_container_width=True)
+
+            st.subheader("Details")
+            for r in results:
+                title = f"#{r.get('property_id')} • {r.get('location')} • ${r.get('price_per_night')}/night"
+                with st.expander(title, expanded=False):
+                    if r.get("description"):
+                        st.write(r["description"])
+                    if r.get("tags"):
+                        st.write("Tags: " + ", ".join(map(str, r["tags"])))
+                    if r.get("features"):
+                        st.write("Features: " + ", ".join(map(str, r["features"])))
+                    st.write(f"Type: {r.get('type', '')}")
+                    if "capacity" in r:
+                        st.write(f"Capacity: {r['capacity']}")
