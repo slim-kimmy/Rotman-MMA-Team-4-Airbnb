@@ -1,6 +1,6 @@
 import json
 import faiss
-from langchain_community.embeddings import HuggingFaceEmbeddings
+from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.docstore import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
@@ -12,14 +12,14 @@ from dotenv import load_dotenv
 load_dotenv(".env")
 OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-def similarity_search(preferred_environment,query_text,max_price, min_price):
+def similarity_search(preferred_environment,query_text,max_price, min_price,capacity):
     with open(os.path.abspath("../data/vacation_rentals_final.json"), "r", encoding="utf-8") as f:
         property_data = json.load(f)
 
     combined_query = f"{preferred_environment} {query_text}"
     embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
 
-    dim = len(embeddings.embed_query("hello world"))
+    dim = len(embeddings.embed_query(combined_query))
     index = faiss.IndexFlatL2(dim)
 
     vector_store = FAISS(
@@ -50,15 +50,15 @@ def similarity_search(preferred_environment,query_text,max_price, min_price):
             extra_body={},
             model="meta-llama/llama-3.3-70b-instruct:free",
             messages=[
-                {
-                    "role": "system",
-                    "content": "You are a helpful assistant that summarizes property listings."
-                },
+                {"role": "system",
+                        "content": "You are a helpful assistant that summarizes property listings."},
                 {
                     "role": "user",
                     "content": prompt
                 }
-            ]
+            ],
+            max_tokens=120,
+            temperature=0.5,
         )
         summary = response.choices[0].message.content.strip()
         return summary
@@ -72,29 +72,40 @@ def similarity_search(preferred_environment,query_text,max_price, min_price):
                 "type": prop["type"],
                 "features": prop["features"],
                 "tags": prop["tags"],
-                "group size" prop["capacity"]
+                "group size": prop["capacity"],
                 "price per night": prop["price_per_night"]
             }
         )
         for prop in property_data
     ]
     uuids = [str(uuid4()) for _ in range(len(documents))]
-    vector_store.add_documents(documents=documents, ids=uuids)
 
+    vector_store.add_documents(documents=documents, ids=uuids)
+    vector_store.save_local("faiss_index")
     initial_results = vector_store.similarity_search_with_score(combined_query, k=50)  # Similarity search function
 
 
-    def filter_properties_by_user(prop):
-        price = prop.metadata.get("price_per_night", 0)
-        return min_price <= price <= max_price
 
-    filtered_results = [(res, score) for res, score in initial_results if
-                                filter_properties_by_user(res)]
-    filtered_results = filtered_results[:10]  # Display top 10 results
 
-    for res, score in filtered_results:
-        print(f"* [SIM={score:.3f}] {res.page_content}")
-        print()
+    found = False
+    for res in initial_results:  # since similarity_search_with_score returns (doc, score)
+        price = res.metadata.get("price_per_night", 0)
+        group_size = res.metadata.get("group_size", 0)
+
+        if (min_price <= price <= max_price) and (group_size <= capacity):
+            found = True
+            # print summary + some metadata fields
+            print(f"{res.page_content}\n{dict(list(res.metadata.items())[:3])}\n")
+
+    if not found:
+         print("Not Found")
+
+
+similarity_search(preferred_environment="beach",query_text="I want to go to toronto",max_price=200, min_price=100, capacity=5)
+
+
+
+
 
 
 
