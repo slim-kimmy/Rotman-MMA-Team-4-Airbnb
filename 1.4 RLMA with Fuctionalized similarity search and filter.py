@@ -122,4 +122,4 @@ print(tabulate(
     tablefmt="grid"
 ))
 for res, score in filtered_results[:10]:
-    print(f"* [SIM={score:.3f}] {res.page_content}")
+    print(f"* {res.page_content} \n {res.metadata}")
