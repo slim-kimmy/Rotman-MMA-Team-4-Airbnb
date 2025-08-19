@@ -115,4 +115,3 @@ def similarity_search(pref_env="Tropical", query_text="Beach House", max_price=5
             # print summary + some metadata fields
             print(f"{res.page_content}\n{dict(list(res.metadata.items())[:3])}\n")
     return top_n
-print(similarity_search())
