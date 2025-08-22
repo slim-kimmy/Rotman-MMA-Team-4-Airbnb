@@ -155,50 +155,8 @@ else:
         if not results:
             st.info("No matches found.")
         else:
-            # container_styles = {
-            #     "display": "grid",
-            #     "grid-template-columns": "repeat(2, 1fr)",  # 2 cards per row
-            #     "gap": "5px",  # spacing between cards
-            #     "justify-items": "center"
-            # }
-            # cards = []
-            # rank = 1
-            # for r in results:
-            #     cards.append(card(
-            #         title = f"Top {rank}",
-            #         text= r["description"],
-            #         styles={
-            #             "card": {
-            #                 "width": "500px",
-            #                 "height": "200px",
-            #                 "border-radius": "1px",
-            #                 "margin-bottom": "2px auto"
-            #             }}
-            #     ))
-            #     rank += 1
-            #
-            #
-
 
             #
-            #     with st.container(border= True):
-            #         rank += 1
-            #         st.markdown(f" ### Top {rank}")
-            #         if r.get("description"):
-            #             st.write(r["description"])
-            #         if r.get("tags"):
-            #             st.write("Tags: " + ", ".join(map(str, r["tags"])))
-            #         if r.get("features"):
-            #             st.write("Features: " + ", ".join(map(str, r["features"])))
-            #         st.write(f"Type: {r.get('type', '')}")
-            #             #if "capacity" in r:
-            # st.write(f"Capacity: {r['capacity']}")
-            # card(title="Hello World!",
-            #      text="Some description",
-            #      image="http://placekitten.com/200/300",
-            #      url="https://github.com/gamcoh/st-card"
-            #      )
-
             # index_list = ['Top 1', 'Top 2', 'Top 3', 'Top 4', 'Top 5', 'Top 6', 'Top 7', 'Top 8', 'Top 9', 'Top 10']
             # result_df = pd.DataFrame(results, index= index_list)
             # key_cols = ["property_id", "location", "type", "price_per_night", "capacity"]
