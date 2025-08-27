@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="d7672122-45be-4b33-9984-bc2a352392ac" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/data/users.db" beforeDir="false" afterPath="$PROJECT_DIR$/api/data/users.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api/src/frontend.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/src/frontend.py" afterDir="false" />
     </list>
+=======
+    <list default="true" id="d7672122-45be-4b33-9984-bc2a352392ac" name="Changes" comment="" />
+>>>>>>> Yifei
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,6 +36,7 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Python.GUI.executor": "Run",
@@ -43,6 +48,19 @@
     "last_opened_file_path": "/Users/yc/Documents/GitHub/Rotman-MMA-Team-4-Airbnb"
   }
 }]]></component>
+=======
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.GUI.executor&quot;: &quot;Run&quot;,
+    &quot;Python.frontend.executor&quot;: &quot;Run&quot;,
+    &quot;Python.similarity_utils.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Yifei&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/yc/Documents/GitHub/Rotman-MMA-Team-4-Airbnb&quot;
+  }
+}</component>
+>>>>>>> Yifei
   <component name="RunManager">
     <configuration name="similarity_utils" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Rotman-MMA-Team-4-Airbnb" />
