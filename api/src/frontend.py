@@ -130,6 +130,7 @@ with open("../data/images/logo.svg", "rb") as f:
     b64 = base64.b64encode(f.read()).decode("ascii")
 mime = "image/svg+xml"
 data_uri = f"data:{mime};base64,{b64}"
+# Ijecting custom CSS for animation and styling
 st.markdown(
     f"""
     <style>
@@ -145,8 +146,6 @@ st.markdown(
     .slide-in {{
         animation: slideIn 1s ease-out;
     }}
-
-
     </style>
     <div class="slide-in" style="display: flex; align-items: center;">
         <img src="{data_uri}" width="80" style="margin-right: 10px;">
@@ -156,6 +155,7 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
+
 
 if st.session_state.auth_user is None:
     mode = st.radio("Choose:", ["Join", "Login"])
@@ -233,16 +233,14 @@ else:
                         if image_id:
                             try:
                                 folder_id = image_id
-                                # fetch all PNGs in the folder as data-URIs
+                                # Make a post request to image API and get a list of byte encoded images
                                 resp = requests.get(f"http://localhost:8000/images/{folder_id}?n=400&m=400", timeout=6)
                                 data = resp.json()
                                 uris = [item["data_uri"] for item in data.get("images", [])]
-
                                 # Build slides dynamically from uris
                                 slides = "".join(
                                     [f'<div class="swiper-slide" style="; border-radius: 10px 10px 10px 10px;"><img src="{u}" style="width:100%; margin-top: 40px"/></div>' for u in uris]
                                 )
-
                                 html_code = f"""
                                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
                                 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
@@ -255,7 +253,6 @@ else:
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>
                                 </div>
-
                                 <script>
                                 var swiper = new Swiper('.swiper', {{
                                 loop: true,

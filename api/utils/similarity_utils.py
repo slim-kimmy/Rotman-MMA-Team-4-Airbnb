@@ -1,23 +1,22 @@
+import os
 import json
+import time
 import faiss
+import requests
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_community.docstore import InMemoryDocstore
 from langchain_community.vectorstores import FAISS
 from langchain_core.documents import Document
 from uuid import uuid4
-import os
-import requests
-from dotenv import load_dotenv
-import time
 
 
-load_dotenv(".env")
-OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 
-
+"""
+Takes in the property details and has Llama 4 generate a summary for the listing.
+"""
 def create_page_content(property_item):
     time.sleep(3)
-    # Use OpenAI's API to summarize the property details
+    # Initialize prompt and details for building the summary
     prompt = (
         f"Summarize the following property for a vacation rental listing:\n"
         f"Location: {property_item['location']}\n"
@@ -27,13 +26,12 @@ def create_page_content(property_item):
         f"group size: {property_item['capacity']}\n"
         f"Price per night: {property_item.get('price_per_night', 'N/A')}\n"
     )
-
-
+    # URL information and data payload for the request
     url = "https://api.groq.com/openai/v1/chat/completions"
     headers = {
         "Content-Type": "application/json",
-        "Authorization": "Bearer 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"
-    }
+     }
+    # Base model name and message is all that is needed
     data = {
         "model": "meta-llama/llama-4-scout-17b-16e-instruct",
         "messages": [
@@ -43,17 +41,23 @@ def create_page_content(property_item):
             }
         ]
     }
+    # Makes the post request and retrieves the summary
     response = requests.post(url, headers=headers, json=data)
     summary = response.json()["choices"].pop()["message"]["content"]
     return summary
 
 
+
+"""
+Creates the FAISS index and saves it locally.
+"""
 def create_embeddings():
     # Read in the listings 
     with open(os.path.abspath("../data/vacation_rentals_final.json"), "r", encoding="utf-8") as f:
         property_data = json.load(f)
     # Initialize embedding model
-    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2")
+    embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-mpnet-base-v2",
+                                        model_kwargs={"device": "cpu"})
     # Get index size 
     dim = len(embeddings.embed_query("test"))
     index = faiss.IndexFlatL2(dim)
@@ -97,21 +101,21 @@ def similarity_search(pref_env="Tropical", query_text="Beach House", max_price=5
     # Get reference length
     dim = len(embeddings.embed_query(combined_query))
     index = faiss.IndexFlatL2(dim)
-    # Load in local vector store 
+    # Check if vector store
+    if not os.path.exists("../data/faiss_index"):
+        create_embeddings() 
+    # Load in local vector stor
     vector_store = FAISS.load_local(
         "../data/faiss_index", 
         embeddings, 
         allow_dangerous_deserialization=True
     )
-    # Get the initial 50 matches
-    initial_results = vector_store.similarity_search_with_score(combined_query, k=50)  # Similarity search function
-    for item in initial_results:  # since similarity_search_with_score returns (doc, score)
+    # Get the initial 50 matches and filter based on price and capacity
+    initial_results = vector_store.similarity_search_with_score(combined_query, k=50)
+    for item in initial_results:
         res = item[0]
         price = res.metadata.get("price per night", 0)
         group_size = res.metadata.get("group size", 0)
-
-        if (min_price <= price <= max_price) and (group_size <= capacity):
+        if (min_price <= price <= max_price) and (capacity <= group_size):
             top_n.append(res)
-            # print summary + some metadata fields
-            print(f"{res.page_content}\n{dict(list(res.metadata.items())[:3])}\n")
     return top_n
