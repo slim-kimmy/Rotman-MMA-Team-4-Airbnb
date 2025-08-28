@@ -1,6 +1,15 @@
 # LLM Usage Instructions
 Our system use **Meta llama-4** through *OpenAI API (Groq)*, to create a summary for Airbnb-styled property listings.
 The property summary is embeded from FAISS to improve search.
+## Prerequisites
+Before using the LLM integration, ensure to have:
+* Python 3.8 +
+* Package Installation:
+```
+pip install requests 
+            langchain
+            faiss-cpu
+```
 
 ## Signup API Key
 0. To get an API key, you need to register for OpenRouter/Groq account first.
@@ -25,6 +34,16 @@ Price per night: {property_item.get('price_per_night', 'N/A')}
 ```
   * The piece of code for ``` create_page_content() ``` is extracting the generated strings for property summary
   * Like stated above, summary is embeded and stored in FAISS
+
+## Rate Limites
+    * Groq API has rate limits, see documentation (https://console.groq.com/docs/rate-limits)
+    * To avoid hitting limits, ```time.sleep(3)``` is currently implemented
+    * If you have an account, you can monitor the usage at (https://console.groq.com/home)
+
+## Troubleshooting
+1. **API Key Not Found**: Please make sure ```.env``` file is in the root directory & check for API key to be updated when generate a new key
+2. **ModuleNotFoundError**: Use code ```pip install missing-package-name```
+3. Slow performance: Either reduce ```k``` value in ```similarity_search(...k=50)``` or use a faster API model by changing ```"model": "meta-llama/llama-4-scout-17b-16e-instruct"```
 
 ## Other Notes
   * LLM is used one time per property. This ensures the search is fast & does not reach the limit.
