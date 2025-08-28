@@ -1,0 +1,17 @@
+[client]
+toolbarMode="minimal"
+
+[ui]
+hideTopBar=true
+
+[server]
+enableStaticServing = true
+runOnSave = true
+
+[[theme.fontFaces]]
+family="DMSans"
+url="app/static/DMSans-Regular.ttf"
+style="normal"
+
+[theme]
+font="DMSans"
