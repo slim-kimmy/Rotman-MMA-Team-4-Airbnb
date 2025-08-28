@@ -35,7 +35,7 @@ Project for RSM8431Y
 - We pass the user query, vectorize, and retrieve relevant queries. Then applying our two-step filtering (budget and group size) gives the highly relevant and actionable recommendations to your search input!
   
 ## Known Issue
-Insufficient Filtered Results
+### Insufficient Filtered Results
 The current search algorithm returns the top 50 results without filtering for budget or capacity. This can lead to inefficient recommendations since users may get results for top ten recommendation. We plan to redesign this by implementing a more efficient pre-filtering mechanism using Faiss IndexIDMap to consider these constraints before generating results.
 
 ## Disclaimer:
