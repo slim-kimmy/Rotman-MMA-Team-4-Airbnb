@@ -28,9 +28,9 @@ Price per night: {property_item.get('price_per_night', 'N/A')}
 
 
 ## Rate Limits
-    * Groq API has rate limits, see documentation (https://console.groq.com/docs/rate-limits)
-    * To avoid hitting limits, ```time.sleep(3)``` is currently implemented
-    * If you have an account, you can monitor the usage at (https://console.groq.com/home)
+* Groq API has rate limits, see documentation (https://console.groq.com/docs/rate-limits)
+* To avoid hitting limits, ```time.sleep(3)``` is currently implemented
+* If you have an account, you can monitor the usage at (https://console.groq.com/home)
 
 ## Troubleshooting
 1. **API Key Not Found**: Please make sure ```.env``` file is in the root directory & check for API key to be updated when generate a new key
@@ -38,7 +38,8 @@ Price per night: {property_item.get('price_per_night', 'N/A')}
 3. Slow performance: Either reduce ```k``` value in ```similarity_search(...k=50)``` or use a faster API model by changing ```"model": "meta-llama/llama-4-scout-17b-16e-instruct"```
 
 ## Other Notes
-  * LLM is used one time per property. This ensures the search is fast & does not reach the limit.
+* LLM is used one time per property. This ensures the search is fast & does not reach the limit.
 
-  * Caching is enabled for performance. If the property remains unchanged, the cached summary is reused. If the property is updated, the LLM is called again and the summary is updated.
+* Caching is enabled for performance. If the property remains unchanged, the cached summary is reused. If the property is updated, the LLM is called again and the summary is updated.
+
 
