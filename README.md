@@ -25,12 +25,18 @@ Project for RSM8431Y
 3. Browse the suggestions from our AI algorithm !
 
 ## How it works ?
-1. We create our JSON of properties with information as per the project requirements with the provided prompt.
-2. The info in these properties are then parsed and sent our in a chat request to Llama-3 to copywrite and create custom listing descriptions.
-3. We use HuggingFace embedding models to vectorize the text and inser into our FAISS database.
-   
-5. We pass the user query, vectorize, and retrieve relevant queries to your search input !
-   
+### 1. Property Data Creation
+- We create our JSON of properties with information as per the project requirements with the provided prompt.
+### 2. Natural-Language Summaries with Llama 3
+- The info in these properties are then parsed and sent out in a chat request to Llama-3 to copywrite and create custom listing descriptions. The model synthesizes features, tags, and locations to create rich and natural-language summaries, capturing each property’s unique character beyond simple keyword matching.
+### 3. Embedding and FAISS Database
+- We use HuggingFace embedding models to vectorize the text and inser into our FAISS database. FAISS retrieves the most semantically relevant property vectors in milliseconds, ensuring high-speed and exact matches.
+### 4. Query Matching and Filtering
+- We pass the user query, vectorize, and retrieve relevant queries. Then applying our two-step filtering (budget and group size) gives the highly relevant and actionable recommendations to your search input!
+  
+## Known Issue
+Insufficient Filtered Results
+The current search algorithm returns the top 50 results without filtering for budget or capacity. This can lead to inefficient recommendations since users may get results for top ten recommendation. We plan to redesign this by implementing a more efficient pre-filtering mechanism using Faiss IndexIDMap to consider these constraints before generating results.
 
 ## Disclaimer:
 This project contains portions of code that were developed with the assistance of artificial intelligence tools, including GitHub Copilot and OpenAI’s ChatGPT. These tools were used to generate code suggestions and documentation. All AI-generated content has been reviewed, modified, and integrated by the project authors, who bear responsibility for the final implementation.
