@@ -15,8 +15,8 @@ Project for RSM8431Y
 ## Features
 1. Streamlit based frontend with scrollable images.
 2. Read, Write, Insert, Delete capabilities for the user database.
-3. Transforming embedding support natural language search capabilities.
-4. Query filtering capabilities performed through user edit panel.
+3. Transformer based embeddings support natural language search capabilities.
+4. Query filtering capabilities through user edit panel.
 
 ## Start looking for your dream vacation !
 1. First join or login.
