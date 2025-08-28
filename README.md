@@ -36,7 +36,7 @@ Project for RSM8431Y
   
 ## Known Issue
 ### Insufficient Filtered Results
-The current search algorithm returns the top 50 results without filtering for budget or capacity. This can lead to inefficient recommendations since users may get results for top ten recommendation. We plan to redesign this by implementing a more efficient pre-filtering mechanism using Faiss IndexIDMap to consider these constraints before generating results.
+The current search algorithm returns the top 50 results without filtering for budget or capacity. This can lead to fewer recommendations for users. We plan to consider these constraints before similarity searching by using **FAISS IndexIDMap**.
 
 ## Disclaimer:
 This project contains portions of code that were developed with the assistance of artificial intelligence tools, including GitHub Copilot and OpenAI’s ChatGPT. These tools were used to generate code suggestions and documentation. All AI-generated content has been reviewed, modified, and integrated by the project authors, who bear responsibility for the final implementation.
