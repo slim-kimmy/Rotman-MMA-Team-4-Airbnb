@@ -1,6 +1,8 @@
 # Rotman-MMA-Team-4-Airbnb
-Project fo RSM8431Y
+Project for RSM8431Y
 ## Setup 
+0. Clone repo at submission branch.    
+    ```git clone -b submission --single-branch https://github.com/slim-kimmy/Rotman-MMA-Team-4-Airbnb.git```
 1. Create a virtual environment named venv by running.
     ```python -m venv venv```
 2. Navigate to the same directory as the ```requirements.txt``` file and run.
