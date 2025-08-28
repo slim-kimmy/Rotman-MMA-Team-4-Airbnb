@@ -37,6 +37,8 @@ Project for RSM8431Y
 ## Known Issue
 ### Insufficient Filtered Results
 The current search algorithm returns the top 50 results without filtering for budget or capacity. This can lead to fewer recommendations for users. We plan to consider these constraints before similarity searching by using **FAISS IndexIDMap**.
+### Performance Lag
+The current search process includes an embedding generation step for a sleep on every search. This function was intended as a one-time pre-processing script, but is currently a critical source of performance latency. We are actively working to optimize this process to achieve a competitive search speed for each execution.
 
 ## Disclaimer:
 This project contains portions of code that were developed with the assistance of artificial intelligence tools, including GitHub Copilot and OpenAI’s ChatGPT. These tools were used to generate code suggestions and documentation. All AI-generated content has been reviewed, modified, and integrated by the project authors, who bear responsibility for the final implementation.
